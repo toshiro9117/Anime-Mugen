@@ -1,0 +1,92 @@
+Changes done to SSJ Goku from Majin Build to recent:
+
+
+=[HDBZ] Authorname changed to "Team Z2";
+=[HDBZ] Updated sound file.
+=[HDBZ] Updated notification text graphics.
+=[HDBZ] Dash Collision bug fixed and effects and text notification removed/commented.
+=[HDBZ] Hitsparks converted from explods to sparkno and sparkxy.
+
+
+=Reduced life to 900.
+=The AI will not go into Justice Mode while charging power.
+=AI was able to perform cr.MP > st.MK. Feature removed.
+=Hitsparks converted from explods to sparkno and sparkxy.
+=P2StateNo converted to TargetState in all cns files.
+=added two ticks of no control in the landing state;
+=Converted pausetimes from WinMugen to Mugen 1.0.
+=Put TargetState instead of p2stateno.
+=Timer freezes during Ultimate moves.
+=Added two ticks of no control in the landing state.
+=Fixed Zero Counter start up animation.
+=New damage dampener added.
+=All varsets (var(7)) in all states that require it are now fixed (a.HP / a.HK bounce juggle limit).
+=Quick workaround for Piccolo's clones and Saibamen implemented 
+ (he will do a strong Blast Fist  against them instead of the Shin Shoryuken).
+=Readjusted dmg on ALL super and finishers.
+=fixed the minimum dmg issues with his LVL3 finishers. 
+
+=Added recovery time to Focus Attack.
+=s.SP now uncancellable until the last hit. Also, more time recovery added on the last hit.
+=The cr.SK is some ticks slower than before. Adjusted codes for statetypesets, y positions, etc. .
+=Teleport -> Blast Fist (shoryuken) loop combo shortened by a lot.
+ After a Blast Fist you can teleport twice if in Justice mode, once if not.
+=Added ability to cancel after coming down from EX Blast Fist.
+=Removed height restriction from EX Dive Kick and added it to normal Dive Kick.
+
+=Increased start-up of teleports.
+=Teleports now cost 500 meter unless you teleport while P2 is blocking. Then it costs 1000 meter.
+=If P2 is in a hitstate while you teleport your super meter will fill up half as fast till P2 recovers.
+=While in Justice mode, Teleport Attacks do NOT cause the super meter reduction. Just the teleports that leave you ctrl.
+=When you exit emo mode due to any teleport you also lose 1000 super meter. 
+ These nerfs were added to prevent people from using Justice Mode to build meter super fast 
+ and then go straight into Justice Mode again.
+=Doing a teleport ads 1 point to your damage dampener.
+=Made an alternative way to do teleports with QCB+attack.
+
+=cr.SK -> Air Kamehameha (lv1 and lvl2) combo link added.
+=Lvl 1 Kamehameha does 8 hits now instead of 10.
+
+=Sonic Rush LVL1 and 2 deal more damage.
+
+=The Super Kamehameha effects now play during pause/superpause.
+=Fixed Air Super Kame by adding a No Push helper and adding PlayerPush = 0 on all the charging states.
+=Temoved white Flash FX effects for Ki blasts and Kamehamehas.
+=Chou Kamehameha's damage has a different damage dampener (same thing I did for Gohan). 
+ No, it's not the new damage dampener that was suggested, I'm still using the old one. 
+ I set a variable that keeps count of the hits the Super Kame does 
+ and the damage gets scaled because of it, separately from the other attacks.
+
+=The AngleDraw state controllers in the Hyper Rush attacks had commented ignorehitpauses, 
+ making the supermove look wrong. Uncommented.
+=Hyper Rush: Genkidama finisher fixed
+(aura sound effects missing; I used sound 8,5 instead of 8,0 since it's longer).
+=Hyper Rush: Angry Kamehameha finisher fixed
+(the Kamehameha wouldn't put the enemy in a custom state, so I restored the p2stateno and commented the TargetState).
+
+=Justice mode activation changed from d,d,d+MP+MK to d,d+MP+MK.
+=Justice buffer bar consumption added (for Teleport Kamehameha level 1) 
+ and slightly changed for the different teleports/zanzoken attacks.
+=Reduced damage value of the Teleport Attacks.
+=You can't attack the enemy with the same Teleport Attack during a combo.
+=Made Teleport Attacks actually useful. They give super meter if you connect 
+ and they build up your Justice bar MUCH faster. 
+ They do give P2 quite a bit of meter though. Especially if they block it.
+=Increased Justice power usage of teleport attacks (no combo) from 1/10 to 1/8.
+=Changed teleport attack combo chains to 2 (instead of 3). (Variable 15 in the .cmd)
+=Fixed an issue where losing 1000 meter by leaving Justice through teleport happened only once a round.
+=Justice Mode doesn't carry over to the next round anymore, whether you win or lose.
+
+=Applied the 'mouth closes after yell ends' frames in the power charge and Justice Mode activaion animations.
+=Goku Black palette (made by LightScarecrow, edited by AlexSin) added as 7th (Start + Weak Kick) palette.
+=Added MY TOES! sprites and animation (group 5886); sprites color separated by Sin.
+=Super KO Background effect added for all supermoves that didn't have it.
+=All the winquotes from Goku Z2 are now added into SSJ Goku Z2.
+=Added updated sprite 19897,0 (Super KO Background graphic).
+=Managed to resolve some Justice bar (blue) graphical bugs.
+=Fixed King Kai's antennas in his car crashing winpose.
+=The aura effects will stop while in pause/superpause.
+=Sounds get properly cut off when skipping intros.
+=Dizzy stars moved 30 pixels upwards for Piccolo.
+=resolved some Justice bar (blue) graphical bugs.
+=No intro sounds when skipping intro.

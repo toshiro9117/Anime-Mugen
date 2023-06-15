@@ -1,0 +1,726 @@
+TO PALETTIZE, ALWAYS USE 1.ACT !!!!
+
+Alpha 1 - Started 24/11/2011 :
+- Palettized first sprite pack
+- Basics added : crouching, dash FWD & BWD, guarding, portraits, running, stance, walking.
+- Added available gethits : back broken, beam fatality, flip KO, gethit crouching+gut+regular+upper, trop, twist KO & falling down.
+- Added sprites for c.LK.
+- Added sprites for c.MK : anim to be redone.
+- Palettized updated pack.
+- Added turn animation.
+- Added dash collision anim.
+- Added s.SP & modified AIR & code
+- Added s.LK and modified AIR & code
+- Added falldown and knockdown gethits.
+- Coded s.MP.
+- Added Slash Chop sprites.
+- Cleaned up AIR file.
+- Changed a few constant values : less life, more speed.
+- Added s.MK
+- Added s.MK close
+- Added s.MK combo
+- Added s.SK
+- Added c.LP and c.MP
+- Add c.SK (launcher)
+- Added Launcher Kick (running)
+- Added a.LP
+- Added a.MP
+- Added a.LK
+- Added a.MK & a.SK
+- Added a.MK combo
+- Added grabbing
+- Added a.SP with bounce juggling
+
+Alpha 2 :
+- a.SK doesn't make a standing opponent fall anymore.
+- Lowered s.LK damage due to super long range.
+- Realigned s.LP sprites.
+- Slightly modified a.SP collision boxes and added more recovery time.
+- Added the "shake" to s.SP.
+- Added dizzy anim.
+- Added side step to s.MK and s.MK combo, so the attacks have a much better range and connect correctly now.
+- Added Hyper Dimension intro.
+- Added Cheap KO anim.
+- Added Slash Chop
+- Changed c.MK to the new version
+- Added close s.LK
+
+Alpha 3 :
+- Koopakoot's work, with no Progress Log.
+
+OMG ALPHA 4 (Taking work from Koopakoot's version, 09/06/2013) :
+- Converted all palettes. Now 77 palettes for Gohan.
+- Replaced SND file by that of Goku Z2, in order to have latest sound FX (didn't clean up all voices yet).
+- Polished Dive Kick Flurry : sound FX, damage, hitsparks, coding, landing FX, changed command to qcf, etc.
+- Power Charge
+- Updated state -2/-3 to current standard.
+- Polished Soaring Dragon Kick.
+- EX Soaring Dragon Kick.
+- c.SP
+- Updated override.cns to current standard.
+- Updated normal moves to current standard (hitsounds, wooshes and all)
+- Throw 1 (Tomoe Nage)
+- Ground recover.
+- Ground Punch Zero Counter
+- Ground Kick Zero Counter
+- Aerial Punch Zero Counter
+- Aerial Kick Zero Counter
+
+ALPHA 5 :
+- Using Koopa's latest coding for Soaring Dragon Kick
+- Using Koopa's new vels and states for Dive Kick Flurry.
+- Dash up and down, with double air dash (taken from Koopa's version). Even gave more mobility by allowing air dash after forward air dash.
+- Using Koopakoot's version of c.SP.
+- a.SP doesn't mess with opponent variables.
+- Correct afterimages for super jump and air dash.
+- Updated Slash Chop to current standards
++ Omni Kicks
+- Added Flash FX to Ki Blasts.
++ Hurricane Kick (qcb+K on ground).
++ Masenko
+
+ALPHA 6 :
+- Can chain Ki Blast > Masenko.
+- Masenko has bigger hitstuns. CHarged version does more hits (3 for basic, 5 for fully charged).
+- Added floating mechanics after air dash up.
+- Updated Hurricane Kick vels.
+- EX Soaring Dragon Kick has correct woosh sounds.
+- Made air combos reliable.
+- EX Soaring Dragon Kick has burst aura SFX.
++ Ex Diving Kick Flurry (modified strong DKF).
+- Added limiter to Masenko, only performable once in a combo.
+- Fixed c.MK hair color problem.
+- Added charge sprites to Masenko.
+- Masenko Charging FX changed to yellow.
++ Chou Kamehameha (on ground).
+
+BETA 1 :
++ EX Hurricane Kick, with wall bouncing and invincibility.
+- Added guard sounds to specials.
+- 14 new palettes.
+- Rearranged palette order.
+- Changed color of small portrait.
+- Can cancel into specials/supers after s.MK*2.
+- Modified EX Soaring Dragon Kick, to avoid whiffing, bigger hitpause and envshake on 3rd hit.
+- New Masenko charge and launch sound.
+- Cleaned up SND file of most Goku voices, for future work.
+- f,f+SK has more range and CLSNs that allow him to pass under a few projectiles.
+- Masenko causes Super KO BG.
+- Strong Ki Blast has correct sound effect.
++ Beam Collision vs Gohan, Goku, Vegeta, SSJ Goku.
++ Soaring Dragon Strike (qcb,f+P)
+- Woosh for Ground Kick Zero Counter is displayed at the right time.
+
+BETA 2 :
+- 2nd air dash has boosted velocities.
+- Can chain c.SP > s.SK (lowered c.SP damage).
+- Updated Soaring Dragon Strike.
+- Chou Kmh has Super BG during the first round.
+- Wheel Kick Mega has SSJ Goku's Wing Kick SFX.
+- Soaring Dragon Strike has Super BG.
+- Masenko charging sound stop when you launch it.
+- Updated Diving Kick Flurry sounds.
++ Soaring Dragon Unleashed.
+- Repel projectile is correct vs Z2 chars.
+- Updated repel projectile FX to new standard.
+- Fixed MKx2 > SK > Ki Blast x2 > Masenko Training Mode infinite.
+- Changed Focus attack woosh sound. If it's fine, I'll change it for other Z2 chars too.
+- Added the auras to EX Hurricane Kick.
+- Recolored big portrait.
+- New air dash forward sprites.
+- s.SP > s.SK is impossible. s.SP > s.LK is impossible too. This avoids infinites and balances the range of s.LK.
+
+BETA 3 :
+- Added CLSN to Masenko launch (cuz I forgot, yeah I'm that stupid).
+- Fixed burst aura sounds for EX Hurricane Kick.
+- s.SP > s.LK is impossible (for real LOL).
+- Improved (hopefully) Soaring Dragon Strike/Unlieashed velocities.
+- SDS/SDU comboable from Ki Blast and Ironman pose.
+- Additional Startup sprite for SDS/SDU, and fixed speed SFX.
+- More recovery time for s.SK.
+- Added mouth to Chou Kmh.
++ Chou Masenko.
+- More vels for P2 on last hit of EX Soaring Dragon Kick (what's the point LOL).
+- Added recovery SFX.
+- More recovery time for Hurricane Kick (longer Ironman pose), for balance. Also makes [corner] SK Hurricane > Soaring Dragon Kick impossible (I think).
+- Fixed Wheel Kick Mega sprite with shirt missing.
++ Elbow Drop (air D+mp)
++ Forward Throw.
++ Backward throw.
++ Aerial Chou Kamehameha
+- New SDS/SDU hitsound.
+- 20 new palettes (2 Chazzanova, 2 Dope, 14 Hien, 1 Karasai, 1 Priime)
+
+BETA 4 :
+- Chou Masenko launch loop anim.
+- Beam collision super portrait.
+- Shocked animation.
+- Fixed backward throw.
+- New superpause sprite for SDK/SDU.
+- SDK/SDU have faster startup to ease comboability.
+- Added Super KO BG to all supers.
+- Get up sprites.
+- New single sprite for stance (test).
+- Woosh for a.MP is sooner.
+
+BETA 5 (sent 16/07):
+- Slightly edited Omni Kicks red CLSNs.
+- Fixed jump fwd descending sprites.
+- Backward throw only counts as a single hit.
+- c.SK and Sliding c.SK can be combo'd into all specials and supers.
+- Moved Chou Masenko beam a few pixels forward.
+- Updated Chou Kmh charge sprites.
+- Updated Air Chou Kmh charge sprites.
+- 46 new palettes (4 MugenXXX0, 13 Quickfist, 29 SoldierSunday)
+- Fixed some readme mistakes.
+- Changed Ki Blast hitsound.
+- Added flash sprites to air chou kmh.
+- Can hold Y during elbow drop (D+y in air) to keep the attack out.
+- Added straight kick to forward grab.
+- New aura FX for EX Hurricane Kick.
++ Cursed state
++ a.MP combo
+- Slightly changed P2 vels during launcher to ease comboability.
+- Vertically scaled lightning FX during air Chou Kmh when Gohan is very high in the sky, to avoid cut off.
+- EX Hurricane Kick doesn't whiff vs Megaman by DG.
+
+BETA 6 (sent 11/08) :
+- When Gohan is hit by Goku's Backbreaker, it doesn't create a clone of Gohan.
++ Gekiretsu Ranbu, 1st version.
+
+BETA 7 (sent 31/08):
+- Fixed Rising Hurricane Kick floating sprites (correct hair direction).
+- Finetuned the damage on basics and specials. 
+- Added invincibility at beginning of Chou Masenko.
+- Gekiretsu Ranbu :
+	+ Changed Gekiretsu command to 2*qcb+K.
+	+ Larger hitbox for teleport launcher kick.
+	+ Changed charge pose to Focus attack pose.
+	+ Gohan teleports at the beginning of the move if P2 is too far.
+	+ New startup confident stance.
+- New Lv1 Superspark and new Lv1+Lv2 supersound.
+- New Balthazar-SSW_alt3 palette at B button.
+- 10 new palettes : 9 by Blue_Sun_Studios, 1 by SuperGohanSunderland.
+- New falling sounds.
+- Updated roundhouse kick animation (end of multi kick throw).
+- Updated high side kick animation.
+- Blurred arm frame never displayed at end of Soaring Dragon Strike (Lv1+2).
+- Added Aura FX to Soaring Dragon Unleashed (Lv2).
++ Kinton cloud intro.
++ Close s.MP.
++ Masenko Upwards.
+
+BETA 8 (sent 06/09/2013) :
+- Confident pose activation sound.
+- Sounds when walking forward. 
+- f,f+SK always has Gohan go forward, allowing to combo from Slash Chop more easily.
++ Japanese voices (some are missing, such as Chou Kmh and Masenko).
++ English voices (same comments).
+- Fixed bug in Soaring Dragon Strike where Gohan disappears a few ticks.
+- Added code to prevent 2 kinton intros when Gohan fights Gohan or Goku.
++ s.LP close.
+- New falling sprites after his Rising Hurricane Kicks/Omni Kicks.
++ Alpha version of his Facebook winpose.
+
+BETA 9 (sent 22/09/2013) :
++ Super Hurricane Kick (qcb*2+K in the air).
+- Changed Gekiretsu Ranbuu command to qcb,f+K to avoid performing it by accident when landing, wanting to perform Super Hurricane Kick.
+- Correct position for c.MK hitspark.
++ EX Ki Blast.
+- Recolored his Flash overlay sprites to be all white.
++ Great Saiyaman winpose
+- Quick recovery voice is now correct in English sound.
+
+BETA 10 (30/09/2013) :
+- Super BG for Super Hurricane Kick. :P
+- Different superpause sprite for Super Hurricane Kick.
+- Added big rotating FX to Super Hurricane Kick.
+- Ki Blast comboable into EX Ki Blast.
+- Blackand white palFX during Henshin winpose.
+- Fixed jump alignment for P2 during Kinton intro.
++ New stance
++ Taunt
+- New jump back going down sprites.
+- Changed "Kamehame" voices by shorter ones.
+- Updated readme.
+- New 2nd Kick sprites for (EX) Hurricane Kick, with new aura too.
++ Updated Gekiretsu Ranbu's last part with the flying part.
+- s.SK*2 = SK > Wheel Kick Mega.
+
+BETA 11 (19/10) :
+- Longer taunt
+- Facebooking : less tapping sound, added taunt sound when seating.
+- Added SFX when P2 is flying in the air during Gekiretsu Ranbu.
+- New jump down sprites for Ranbu ending, Soaring Dragon Strike/Unleashed and forward jump.
+- Faster animation at the end of Gekiretsu Ranbu, so Gohan doesn't disappear too long when KOing P2.
+- Updated Saiyaman winpose (animation + face).
+- Gohan walks to center of screen during Saiyaman winpose.
++ Midnight bliss.
++ Bike intro.
+- Facebook page fades in instead of zooming in.
++ Car with Videl intro.
+- Chou Kmh uses correct voice for English version.
++ Hyper Dimension winpose.
++ Scratching/Laughing winpose.
++ Palette showcase in the palette folder.
+- Flash FX removed correctly when Gohan is hit out of Air Chou Kmh.
+- Removed voice randomization during Ranbuu move, to avoid having the same voice being displayed twice in a row.
+- Included big sprite at beginning of Chou Masenko. I personally think it's ugly ...
++ New Dive Kick sprites (that lead into the Kick Flurry)
++ c.MK animation update.
++ New walk animation.
+- Fixed wrong colors at beginning of Henshin winpose.
+- The Upwards Masenko has a Super KO Background.
+- Added "run stop" sound to f,f+SK.
+- s.MP sprite update (little fixes).
++ New f,f+MK.
+
+BETA 12 (sent 27/10) :
+- Changed back Chou Masenko FX animation.
+- Can combo into any basic after f,f+MK. Also reduced hittime.
+- Added dragon roar, dive kick and English voice sounds to f,f+MK
+- Added slowmo woosh sound to EX Rising Hurricane Kick.
+- Fixed disappearing bug in Henshin winpose.
+- Hyper Dimension winpose: longer waiting time, added woosh sound.
+- New jump down sprites for Ranbu ending, Soaring Dragon Strike/Unleashed and forward jump <-- good ones this time. :P
+- Fixed Chou Kmh fatality dissolving part.
+- EX Ki Blast can be supercancelled into Masenko, Chou Masenko, Chou Kamehameha or Soaring Dragon Strike/Unleashed.
+- Replaced the descent sprites after the flipping during his Diving Kick Flurry, with the newer jumpback descent sprites.
++ New backdash animation.
++ New s.MK
+- 8 new palettes by Bomberman, because it will NEVER stop.
+- Fixed eyebrow color on new c.MK animation.
++ Destiny mode activation state (d,d,d+Y+B)
++ New crouch animation
+- Updated Hurricane Kick sprites (2nd kick).
++ New Run Stop animation.
++ New Ironman animation
++ New Soaring Dragon Strike animation.
+- Put a little more delay between each 'Like' Gohan gets in his Facebook post. Added a sound for each 'Like' he gets.
+- Gave MK hitsound to Diving Kick Flurry on the fast kicks.
+- Can combo into aerial specials and supers after a.MK*2.
+- Fixed footstep sounds in Henshin winpose.
+- P2 slides a bit during Gekiretsu Ranbu, when getting hit.
+
+BETA 13 (sent 03/11) :
+- New Dash Up animation.
+- Gave control at some point during backdash, and the ability to air dash during it too.
+- Car engine sound stops if intro is skipped.
+- Put the jump down (after Omni Kicks) sprites after his (EX) Diving Kick Flurry.
+- Added "Shinkuu Tatsumaki" voice to English version.
+- During s.SK*2, using the same attack frame as the backward throw.
+- EX Hurricane Kick sends the opponent further before wall-bouncing.
+- Binded Flash FX to Gohan during Chou Kmh launch.
++ Goten Circus Act winpose
+- 8 palette showcase for Bomberman palettes.
+- Updated big portrait.
+- a.LP animation update.
+- a.MP animation update.
+- c.LP/MP animation update.
+- Realigned the superspark on his lv1/2 soaring dragon strike.
+- Removed rotated explosion for Up Masenko.
++ New Henshin Winpose.
+- Gohan can hold buttons during Destiny Activation to charge destiny bar.
+- Made aura yellow and smaller during charging (Emotion mode).
+- Added a Destiny charge state to Gohan, replacing Power Charge in Destiny Mode.
+- Added lightning aura during destiny activation/charge.
+- Can backdash during taunt.
++ Goten on Kinton intro.
++ New a.LK animation.
+
+BETA 14 (sent 05/11) :
+- Fixed end of Gekiretsu Ranbu (removed recovery frame on Gohan).
+- Updated confident pose animation.
+- Added flurry sound to EX Diving Kick Flurry.
+- Circus Act winpose :
+	+ Has a "walk to center of screen" code.
+	+ MP woosh sound when Gohan lifts his leg. 
+	+ Striking pose sound. 
+	+ Longer delay when Gohan is turned around.
+	+ Added a jump sound for when Goten comes in.
+- Moved Shinkuu Tatsumaki voice to the actual attack.
+- Henshin winpose :
+	+ Added an offset so Gohan doesn't float in the air.
+	+ Added sounds : wave arm, tornado, silouette sounds.
+	+ Better fade in for colored tonado.
+- Gohan on clouds moves a little further during Goten+Kinton intro.
+- Kinton sound during Goten intro cuts off when intro is skipped.
+- Removed black lightning from Destiny Mode power up.
+- Fixed sound not being stopped when going out of Destiny Charge state.
+- Fixed "Haaa" voice displaying in wrong language during Beam Counter.
+- Fixed speedlines animation during beam struggle.
+- It's possible to beam counter from Power Charge and Focus Attack.
++ Kibito intro
+- Changed lightning sounds during Destiny Mode charge.
++ New guard sprites.
+
+BETA 15 (sent) :
++ Updated Kibito intro with new nude skin and 12 costumes.
++ Henshin winpose : fixed alignment at end of winpose, added bandana and armored versions.
++ Updated turn sprites.
++ Updated s.SP animation.
+- c.LK update.
+- air D+MP update.
++ Destiny Bar.
+- Added a noFG assertspecial at end of Henshin winpose.
+- Added a charging/power-up sound on top of Chou Kmh.
+- Fixed beam counter activation using wrong KAMEHAME voice in English version.
+- Added guard states (standing and crouching) to Beam Counter activation.
++ Added to Destiny mode : Lv1/2 Soaring Dragon Strikes don't use superbar, instead, they drain the special bar. For each hit the move does, 2% is drained. The second time you perform it, 3% per hit, and the 3rd time, the special bar cancels. If Destiny bar goes under 1% at one point, Destiny mode cancels.
++ Added to Destiny mode : Omni Kicks deal 20 more damage on hit and make the screen go black and white.
+
+BETA 16 (sent 20/11) :
++ New s.MP close animation.
+- Updated (Super) Hurricane kick animations.
+- Added one more medium punch woosh sound to the circus act winpose, when Gohan swipes his arm up and Goten jumps off.
+- Changed the last woosh of his Henshin posing to a strong punch woosh.
+- Made p2 hittable after being hit by the up+SK omni kick. Reduced its damage to compensate.
+- In Destiny mode, fixed the special bar draining if P2 is not hit by SDS/SDU.
+- Added white fade-in transition to Henshin winpose.
+- Added a voice to Goten during Circus Act.
++ Destiny Mode : Masenko has charge lightning, dizzies longer and deals more damage.
++ Destiny Mode : Chou Masenko has charge lightning, beam lightning and deals more damage.
+- Updated backdash anim.
+- Updated shake sprites of s.SP anim.
++ Updated s.LK anim.
++ Updated s.LK close anim.
++ Updated s.SK anim.
++ Updated s.MK combo anim.
+- Updated Fwd Omni Kick anim.
++ Facebook Winpose : 6 new FB pages, 2 FB updates.
++ Updated s.MK close anim.
++ Updated Slash Chop anim.
++ Updated Elbow Drop (air d+Y) anim.
+- Added code to prevent 2 Kibito intros.
+
+BETA 17 (sent 30/11) :
+- Fixed Gohan displaying old stance during "crouch to stand" animation.
+- Changed close s.LK 1st frame to that of far s.LK.
+- Changed startup frame of Standing Zero Counter.
+- Gekiretsu Ranbu now performable with d+SP+SK. Set the simplifed command in the options.
+- Added lightning sound during (Chou) Masenko charge in Emo mode.
+- Facebook winpose : added 2 new screens and updated the 15th one again.
++ Updated s.LP Close anim.
++ Updated s.MP anim.
++ Updated Chou Kmh startup anim.
++ Updated Multi-Kick throw anim.
+- Added a special sound effect when firing the Lv2 Masenko during Emo Mode.
+- Updated flying dragon kick anim.
+- Updated Masenko end sprite.
+- Updated s.MP frame 5.
++ Updated Power Charge anim.
++ Updated s.LP anim.
++ Updated grab atempt anim.
++ Updated jump up anim.
++ Updated Super Hurricane Kick anim (missing final kick part).
++ Added aerial f.SK as final kick of Shinku Tatsumaki.
++ Updated Ki Blast anim.
+- Fixed a bug with Beam collision triggers (in Gohan vs Gohan for now).
+- Added an English voice to multi kick throw last kick and to f,f.MK.
+- Removed Flash FX from Ki Blast moves.
+
+BETA 18 (sent 11/12) :
+- Removed last frame of Slash Chop.
+- Put back Up Omni Kick as it was before (more damage, cannot juggle at all or catch with a Masenko).
++ Superman intro.
+- Last frame of his close s.LK is the same as the last from of his far s.LK
+- Same for his Punch standing Zero Counter.
++ Updated walking animation.
++ Updated stance anim, and added eye blinking.
++ Updated end of Circus Winpose.
+- Updated the first 4 sprites of his Multikick Throw.
+- Updated pulling sprites for reverse throw.
+- Added a jump sound to Goten in Kinton intro.
+- Destiny power-up state has dust.
+- Better looping for aura sound during destiny power-up.
+- Added Kanji Lightning to Destiny bar. Unfortunately, had to make the bar not appear on top of other stage elements becaus eof this (as for some other Z2 chars).
+- Forward throw is now a 6-hit combo as it should be displayed.
++ Updated readme (apart from thank you section).
+
+BETA 19 (sent 17/12) :
+- Slight stance anim update.
+- Fixed readme stuff.
+- Changed P2 falling sprite when hit by last attack of Gekiretsu Ranbu.
+- No more s.LP close. Only normal s.LP is kept for all versions.
+- Fixed Ranbu animation.
+- Fixed EX Flurry Kick animation.
+- Air Punch Zero counter anim update.
+- Updated 2nd kick of Rising Hurricane Kick.
+- Added sounds and voices to Superman intro.
+- SDS/SDU can kill before the very end of the move.
+- Added mouth closed sprites during power-up pose.
+- Destiny bar flashes at max power.
+- Updated 1st kick of Rising Hurricane Kick (and UF Omni Kick).
+- Fixed FG elements bug when hitting with Super Hurricane Kick.
++ New custom voice by Corey Holland (intros/winposes not done).
+- Completed the death/cheap KO voices for other voices (not always optimal).
+
+BETA 20 (sent 24/12) :
+- Using Upped voices by Balthazar for Corey Holland voice.
+- Fixed Ex Ki Blast voice saiying "Ta-take this" with Corey voice.
+- During Ranbu, "Sky belongs to me" voice displayed at the right time.
+- Corey : Put Hurricane kick voices for Rising Hurricane kick too.
+- Gohan's Emo mode at full power doesn't make other FX bug.
+- Removed activation voices for Soaring Dragon Lv1/Lv2 and Gekiretsu Ranbu.
+- Emo Powerup yell cuts off when you stop powering up.
+- Correct Goten voice during Circus Act winpose (for Corey voice).
+- Updated run animation.
+- Fixed squarish shape appearing at end of Air Chou Kamehameha.
++ Icarus winpose (without sounds).
+
+BETA 21 (sent 29/12) :
++ Added Kibito costumes. There are now 30 costumes, coded so that 2 similar ones are never shown during the same intro.
+- Gohan only pet taps Icarus once.
+- Fixed Icarus palette.
++ Unleashed Gekiretsu Ranbu works as a mid-distance stand-alone attack.
+- Removed one of the Ranbuu voices which appeared to be cut during the move.
+
+SENT TO BETA-TESTERS
+
+BETA 22 (sent to Balthazar 07/01) :
+- Fixed Air Chou Kmh being performable with qcf+2P.
+- Fixed typo Videl/Chichi name in one of the Facebook pages.
+- Dizzy stars are bound to P2 correctly.
+- Tatsu is now a -10/-13/-15 on block, to make the light version safer.
+- Added scarf to Viewtiful Joe costume (Kibito Intro).
+- Moved large portrait 1 pixel to the right.
+- Fixed Gohan disappearing 2 ticks at beginning of Gekiretsu Ranbu.
+- Extended time for Henshin and Goten Circus winposes.
+- Extended fall.recovertime for Wheel Mega Kick, allowing P2 to ground recover only (not air recover).
+- Added a recovery voice for Corey voice.
+- Fixed Goten explod during Superman intro as P2.
+- Gohan has control when landing from Back Dash.
+- Added sounds to Icarus winpose.
+- Masenko is unblockable when fully charged.
+- Light Hurricane Kick doesn't send P2 far away.
+- During Unleashed mode startup, made mouth to correctly bind to Gohan on stages with moving floors.
+- Adjusted air.velocity for Super Hurricane Kick to make it hit P2 more consistently.
++ Hi-Ex Blast Fist (Fatality 2). No "body parts" code yet.
+
+BETA 23 (sent 08/02) :
+- Extended time for Icarus winpose.
+- Opponent is closer to Gohan during Hi-Ex Blast Fist Finisher.
+- Added sounds to Hi-Ex Blast Fist Finisher.
+- Updated kick flurry animation.
+- Updated a.MK/a.SK animations.
+- Updated Cheap KO animation.
+- Added spacesuit anim to Kibito intro.
+- Fixed a bunch of fucked up sprites in the SFF due to linked sprites.
+- Updated c.MK anim.
+- Updated c.SK anim.
+- Updated c.SP anim.
+- Jump Fwd & back sprites updated.
+- Updated Blur Kick anim.
+- Updated Get Up anim.
+- Updated quick recovery anim, fixed the state with a posadd.
+- Updated Wing Kick, s.MK, s.MK variations.
+- Updated GetHit : crouched, high, mid+supergut, trip, KO'd, etc.
+- Updated a.MK combo anim.
+- Added Correy voice for bike, Videl/Car and Superman intros. They sound loud enough for me.
+- Finisher 1 done at 75%.
+
+BETA 24 (sent 14/02) : 
++ Intro VS Freeza, with custom Correy voice
++ Contemplating intro (for Corey voice only)
+- Added voices to winposes : Laughing, Henshin, contemplating (with "synched" voice/fist)
+- Added a config for Superman theme.
+- Removed "oh right, wrong suit" speech in the Superman intro.
+- Delayed crash sound in Videl intro.
++ Winpose VS Freeza.
+- Updated seating sprites : Facebook, Kinton, reading
+- Updated Butterfly Smash sprites.
+- Maybe fixed problem where old Gohan stance appears during throw (hopefully doesn't create other bugs).
++ Winpose Flying Off.
+- Added various voices : scratch/laughing winpose (English), various English/Jap voices for contemplating intro.
+
+BETA 25 (sent 23/02) :
+- Added code to avoid 2 contemplating intros during Gohan vs Gohan.
+- Butterfly punch can't kill P2 during Finisher 1 anymore.
+- Removed "sky belongs to me voice" during finisher 1 (replaced by a grunt).
+- Removed "Great Saiyaman was here!" speech during his Henshin winpose transformation.
+- Added an exception for his "Unlike my father..." (183,3) speech if against SSJ/Goku Z2.
+- For the "I've battled abomonations..." speech, added the "Who are you!?" bit at the end of that one (but I don't see how it makes sense...)
+- Fixed both Henshin voices ("Henshin" played sooner, better timing and cut for Defender of justice...").
+- Removed green explosion during finisher 2 and replaced it by Big Explosion.
+- Finished Finisher 1 (except for the fatality part).
+- Updated HD intro anim.
+- Added custom voices to Finishers 1/2 (punch flurry, masenko, hi-Ex punch)
+- Changed "Haaaa" voices (Kamehameha) for shorter ones.
+- Made finishers deal the right amount of damage.
+
+BETA 25.1 (sent 08/03) :
+- Removed "the skies belong to me" speech from his 2nd Finisher.
+- Added fatality state for finisher 1.
+- Added fatality winpose after finisher 1.
+- In Finisher 1, delayed the firing of the Masenko a bit, so he charges longer.
+- Fixed Mega Masenko anim only displaying one single sprite when it hits P2 (finisher 1).
+
+BETA 26 (sent 31/03) :
+- Better camera management when Gohan shoots Mega Masenko.
+- Extended part where Gohan shoots Mega Masenko before going out of screen.
++ New pose for Unleashed Ranbu Activation.
+- Updated Dash Collision sprite.
+- Updated Masenko charge, Launch Masenko straight, Launch Masenko Up.
+- Facebook winpose now displays P2 portrait! :D
+- Updated a.MP combo animation.
+- Updated Air Chou Kmh animation.
+
+BETA 27 (sent 22/04) :
++ Fatality 3 !!!!
+- Correct damage for all fatalities.
+- Chou Kamehameha is now blockable by Z2 chars when not charged at all !
+
+BETA 28 :
+- Finisher 3 fixes :
+	+ not using twist KO anim anymore when P2 comes back to screen.
+	+ Fixed Goten appearing one tick before Gohan at the end of the move.
+	+ Addd the Lv2 Super Spark sound when Goten's Kamehameha starts to charge.
+	+ Added white flash transition from the twirling beams to the merged beam.
+	+ Centered the merged beam and P2 Y-wise after the white flash.
+	+ Shortened delay between moment P2 touches the beam and actually gets multi-hit by it
+	+ Replaced old twirling sound by new one, and added beam looping sound (soft version, may not be loud enough).
+	+ Gohan can't move/attack after the winpose, after KO'ing with Finisher 3.
+- Super DBZ super BG with no lifebars.
+- In Emo mode, Omni Kicks, Hurricane Kick and Rising Hurricane Kick all fill the Destiny Gauge.
+
+BETA 29  (sent 08/05):
+- should be impossible to chain into a basic or special attack in the corner after Wing Kick (S.SK > s.SK).
+- Longer recovery time for Chou Kamehameha, to avoid comboing into s.LK/s.LP.
+- For Gohan's personalized intro vs Freeza Z2, removed the lines that he speaks in his 'Saiyaman' voice.
+- Emo Masenko > Chou Masenko doesn't activate Emo Chou Masenko anymore.
+- Decreased the Emo bar gain from Omni and Hurricane Kicks.
++ Chou Masenko Up.
+- Updated a few sprites : c.MK, c.LP/MP, s.MK, s.LP, s.MP, dizzy.
++ New Chou Kamehameha beam sprites.
+- During finisher 3, the twirling beams slowly rise a bit as they are being shown fireing, so they are centered before they merge into the big one.
+- a.SP on a standing opponent won't send him back a lot now. P2 will fall almost in place.
++ Added debris for Fatality 2 (Hi-Ex Punch), and special fatality winpose.
+
+RELEASE CANDIDATE 1 (after beta-testing feedback, sent 18/05) :
+- Removed the last Saiyaman voice from his vs Freeza intro.
+- "Flying away" winpose only during the last round.
+- Startup on throws reduced to 3 ticks, and recovery time set up to 18 ticks.
+- Increased recovery time on Ki Blast (1st and 2nd) to avoid a Ki Blast infinite (https://www.youtube.com/watch?v=lr_dy6k_meA&feature=youtu.be)
+- Divekick Flurry super cancelled slightly late into Hurricane Kick should now connect correctly with P2 (https://www.youtube.com/watch?v=gEOf8_ZPX0k&feature=youtu.be)
+- Fixed a bug where opponent would restand if Masenko juggled low enough.
+- Added Dramatic/Dissolve SFX to Fatality 1.
+- Emo Chou Masenko Up has the travelling lightning FX.
+- Finisher 3 : the twirling beams start going up a little sooner, so it's less obvious that they do.
+- When you catch P2 in the air with Unleashed Gekiretsu Ranbu, made it so P2 would hit the ground during the move (didn't manage having P2 standing at all times).
+- Removed all code for Beam Collision.
+- Updated sprites : for standing Medium Kick, Air Punch Zero Counter, completely new sprite for the last frame of his 2nd Ki Blast throw, the first frame of his idle animation.
+- My Toes! animation.
+- Updated finisher 3 with new improved Beam+Twirl animation.
+- Louder beam sound (2480,0)
+- Speed up the Ranbuu a little bit by changing the hittimes.
+- "Weak Hurricane Kick > Super Hurricane Kick" is now possible.
+- Removed the "I sparred with demons...." speech in HD winpose.
+- Fatality 1 can be triggered only when the match is over.
+- Nimbus with new colors.
+- Fixed FB winpose helper so it would move with a stage that has moving floor.
+- P2 portrait in FB winpose will be correctly placed Y-wise in 99% of the stages. Only bugs when the stage has moving floor.
+- Made it so FB winpose has a 50% chance of displaying P2 portrait, and 50% chance of only showing the mockup messages.
+
+RC 2 :
+- Raised Chou Kmh FX by 4 pixels.
+- Added noFG, noBG, noBarDisplay to fatality states.
+- Added a voice when emo bar is full.
+- Changed the Videl palette and one SSJ palette.
+- Updated the readme, especially Thank You section.
+- Added 1 tick of startup and 3 ticks of recovery to Elbow Drop (aerial D+y) to avoid this combo : Combo: EX qcb+K, jump down+MP, (link) down+MP, MK, [land, jump LP, down+MP, down+MP, (MP or MK)]x4 - http://youtu.be/YeqIc2C2-a0
+- Fixed a bug in the basics limiter to avoid this type of combos on tall chars : http://youtu.be/yymJvlA5nhw ([jump, LK or LP, LK, HK, land] repeat)
+- Can't airguard anymore if jumping forward or if you have air dashed (fix by Websta in Freeza).
+- Replaced certain sprites with others and edited some anims to Balthazar's wishes :
+	+ Group change 1 :
+		* Kamehameha stop launching 004
+		* Jump start frame
+		* winpose 1 (facebook) first frame
+		* Taunt first frame
+		^ all of the above is to be replaced with : Henshin transformation (old save) [Group 900 - Begin Action 18250]
+	+ Crouch Turning 002 : Can this frame simply be removed? 001 > 002 looks weird as fuck with the legs being static, it's supposed to be only 001 and 003, really. If it HAS to be 3 frames, I'll make a pair of new legs for 002 so it animates better.
+	+ Gohan in car [Group 194]
+	+ Time Over 001 > to be replaced with: Cheap KO / Collapse Anim 001
+	+ Jump Down Medium Punch End 002 + Jump Strong Punch 014 (shared sprite)
+	+ Soaring Dragon Strike start-up 002 [Group 2110]
+	+ Soaring Dragon Strike dash 002 + 003 [Group 2100]
+	+ SDS on ground 001 [Group 2110]+ Finisher 1 - teleport & gut punch 003 (shared sprite)
+	+ Group change 2 :
+		* standing Medium Kick 006, 007 and 008
+		* standing close Medium Kick 007, 008 and 010
+		* standing combo Medium Kick 009, 010 and 012
+		^ these are the same three sprites for all three animations described above.
+	+ Wheel Kick Mega - frame 018 (last frame)
+	+ standing Medium Punch 001 + gekiretsu, 4th punch (shared sprite)
+	+ Jump strong punch 001 > to be replaced with: Jump light punch 001
+	+ Zero Counter punch 001 > to be replaced with: Standing Strong Kick 002
+	+ Omni Kick Forward 001 > to be replaced with: Air Zero Counter Kick 001
+	+ Weak/Medium/Strong Hurricane Kick 001 + 002 > to be replaced with: Standing Zero Counter Kick 001 + 002
+	+ Light Soaring Dragon Kick 009
+	+ Strong Soaring Dragon Kick 016 + 017
+	+ gekiretsu, 3rd kick 004 > to be replaced with: Kick Counter 004 [Group 752]
+	+ Omni Kick Up 001 by new Strong Soaring Kick 016
+- Added Bardock outift to Kibito intro
+- Fixed Finisher 3 bug when on far right of the stage.
+
+UPDATE 1 :
+- AI added by Infinite !!!
+- Updated woosh LK (0,3) / woosh SP (0,2) / impact SP (5,2) sounds.
+- Added some winquotes to Gohan
+
+====================================================
+
+NEW MOVES (not for now) :
+- Should he get a ground version for his Super Hurricane Kick? It would act the same as Akuma's in SF3 (he rises straight into the air while spinning, basicly).
+- Saiyaman sentai posing : I think they'll be nice for his Perfect KO. The other Perfect KO winpose I had in mind was that Trunks' time machine would appear, and Future Gohan would come out.
+- Oh I also still think it would be cool if he got the Lv3 Masenko, kind of like an alternative, in-game Finisher move to blow your bar on. It would just use the sprites and sounds from his Finisher 1 Masenko, and work like his in-game Chou Kamehameha. Perhaps even both a horizontal and a diagonal version. You would be able to perform this move only with a fully-charged Emo bar. I think for that one you can pretty much just copy the Chou Kamehameha code and replace the sprites. Same for the diagonal version which I think it should also get.
+
+
+DUNNO OR LATER :
+- Alright this was weird. I came at Freeza with a Lv1 Soaring Dragon Strike, and he kicked me, we traded hits. But then, both players LAUNCHED INTO SPACE superfast! after about 5 seconds, both came falling back down. Don't know what that was all about!
+? still has the alignment jump after he jumps out of is car (in the car with videl intro), to his idle.
+? in the intro, I've seen a 'version' of it where there is no speech from Gohan at all, an oversight?
+[NOT FOR NOW] About Finisher 3, could you be persuaded to cut out the launcher kick > butterfly segment, and just have him do the spinning wing kick instead of the launcher kick, leading straight into the team Kamehameha? It would speed things up a bit and still look as cool as it does now.
+[MEEEEHHH !!!!] Ranbu : It must have some sort of built-in scaler that lowers the damage each time it's used. Going into Training Mode, the first time I pulled it off it did about 390 damage, which seems fair. Doing it a second time, it only did about 250 damage. The third time, only about 150. The 4th time it only did about 50 damage.
+? Infinite #2: [Super jump, down dash, a.LP, land] repeat   : http://youtu.be/ezlWnE4Od9k   ([Down, diagonal up-forward (or up),  down, down (really damn fast! Delay long enough to make sure the LP will actually come out) LP at the same time as the second down input, land]) - Not fixed for now because impossible to perform in a real fight.
+? When attacking p2 when he's dizzy from the Masenko, it will reset the combo counter...then what's the point !?
+? I activated his Lv2 Masenko, and Freeza Z2 did his ground headbutt, somehow I was able to block it (?), but the background did go black (for the superpause). This was a bit weird. I don't really know what happened tbh!
+
+
+FEEDBACK :
+
+- I can't do this intentionally, but sometimes one of the ground hitting fx of the aerial Chou Kamehameha show up in midair.
+- A bug involving the ground dizzy state causing ground normals to whiff based on juggle point values. If Gohan does a combo involving a move that would add juggle points (opponent in air already, then a move with a juggle value), ground-based moves will add juggle and eventually whiff on the ground:  http://youtu.be/9V-TOuJdb4I
+
+- videl car intro battling with gohan. to do this glitch, you need to hear the startup engine on the car, then press CTRL+I and there you go. 
+- censored gohan. if gohan is with kibito, press CTRL+I and Gohan is censored.
+
+
+
+
+---------------------------------------------------------
+Zer0degreez :
+GokuZ2 combos : http://www.youtube.com/watch?v=Cb2MDnjiY0U
+SSJ Goku Z2 : http://www.youtube.com/watch?v=tvg6KeMV2MQ
+
+
+
+---------------------------------------------------------
+VOICES TODO :
+- masenko , KO'd
+
+BETA-TESTERS :
+- zzyzzyxx <
+- Bomberman / Sire Hyogo <<<
+- Cazaki <
+- BPTM5656565 <
+- C.A.N <
+- Infinite <
+- DivineWolf <<<
+? Luis Alejandro <
+? Nanashi <<<
+
+- ComboKyo <<<
+- Rosh <<<
+- Koopakoot
+- Demented Fortune Cookie
+- ZeroDegreez <<<

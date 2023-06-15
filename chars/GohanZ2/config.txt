@@ -1,0 +1,171 @@
+;#####################################################################################################################
+;## PERSONALIZATION FILE FOR GOHAN BY BALTHAZAR & CYBASTER										    		        ##
+;## DON'T modify the values if there isn't any comment explaining what to do just above. This could mess the char.  ##
+;## If you're not sure, make a copy of the file before changing any value.					    					##
+;#####################################################################################################################
+
+[Statedef 5900]
+type = S
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+value = 0
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+fvalue = 0
+
+
+; Throw Tech?
+[State 5900, 3]
+type = VarSet
+trigger1 = RoundState = 0
+v = 0
+;#####################################################################################################################
+;## Choose if and how you want throw teching
+;## 0 = none
+;## 1 = Using Dash Collision
+;## 2 = Normal
+;## Default value is 2
+value = 2
+
+
+; SUPER BACKGROUND CHOICE
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 13
+;#####################################################################################################################
+;## Choose which super background you want to use when Goku kills the opponent with a Super or Ultra move. Set the
+;## value to 0 to use the Street Fighter 3 Super BG, set the value to 1 to use the Jojo's Bizarre Adventure Super BG.
+;## Set the value to 2 to use the Super Dragon Ball Z Super BG. Set the value to any number greater than 2 to disable
+;## Super Background.
+;## Default value is 2.
+value = 2
+
+
+;------
+
+
+; REPEL PROJECTILE FX
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 44
+;#####################################################################################################################
+;## Choose which repel projectile you want to use. Set the value to 0 if you want to use the new yellow/blue one. Set
+;## the value to 1 to use the old purple one.
+;## Default value is 0.
+value = 0
+
+
+
+
+
+;------
+; HOPE GAUGE - X AXIS
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 45
+;#####################################################################################################################
+;## Set the value to move the Hope Gauge to a position that suits you (X Axis in this case). A positive value means
+;## forward (to the middle of the screen), a negative value means backward (to the border of the screen).
+;## Default value is 0.
+value = 0
+
+; HOPE GAUGE - Y AXIS
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 46
+;#####################################################################################################################
+;## Set the value to move the Hope Gauge to a position that suits you (Y Axis in this case). A positive value means
+;## upward, a negative value means downward.
+;## Default value is 0.
+value = 0
+;------
+
+
+
+
+
+
+
+; SUPERMAN MUSIC
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 48
+;#####################################################################################################################
+;## Choose whether you want the Superman theme to play or not during one of his intros. Set to 1 to enable the music,
+;## set to 0 to disable.
+;## Default value is 1.
+value = 1
+
+
+;------
+
+
+
+; GEKIRETSU RANBU COMMAND
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 54
+;#####################################################################################################################
+;## Choose whether you want to use the default command for Gekiretsu Ranbu (qcb,f+K) or the simplified one (d,d+SP+SK). Hero mode (d+MP+MK
+;## Set the value to 0 for the default command, and to 1 for the simplified one.
+;## Default value is 0.
+value = 0
+
+
+;------
+
+
+; ENGLISH, JAPANESE OR CUSTOM VOICE
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 55
+;#####################################################################################################################
+;## Choose which voice you want to use. Set the value to 0 to use the Japanese voice, set the value to 1 to use the 
+;## English voice, set the value to 2 to use the Custom English voice by Corey Holland.
+;## Default value is 2.
+value = 2
+
+
+
+
+
+
+
+
+
+
+
+
+;=================================================
+; DO NOT CHANGE ANYTHING BELOW THIS LINE !!!
+
+[State 5900, Winpose detection Facebook reset]
+type = VarSet
+trigger1 = 1
+var(34) = 0
+
+[State 180, Quote];Enemy is Freeza
+type = Varset
+trigger1 = enemy,name="Freeza Z2"
+trigger2 = enemy,name="Freeza" || enemy,name="Frieza" || enemy,name="Freezer" || enemy,name="Freeza by OverMind"
+trigger3 = enemy,name="Disciple's Freeza" || enemy,name="Freezer 4th Form OS" || enemy,name="frz"
+trigger4 = enemy,name="CS-Freezer'AS"
+trigger5 = enemy,name="Final Form Frieza Hyper Demension"
+var(47) = 1
+
+[State 5900, End]
+type = changestate
+trigger1 = !time
+value = IfElse(roundno = 1, 190, 0)
+

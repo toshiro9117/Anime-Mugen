@@ -1,0 +1,85 @@
+FILTHY CASUAL 
+
+Limit the amount of moves that can cancel into teleport. Maybe make it not Air-OK. Add some more startup to it so it isn't as fast. Probably would be best if you guys took a look at some of the teleport type characters in Marvel for an example on how to balance the teleport. Hope this helps.
+
+
+-----------------------------------------------------
+Zer0degreez
+
+Just brainstorming idk if some(or any) of these are a good idea. you could
+-Make it cost more meter
+-More start-up
+-Make it so that you can only teleport when you hit the opponent so you dont get crazy blockstrings and mix-ups.
+-Cant teleport while already in the air
+These are just some of the ideas that come to mind.
+
+-----------------------------------------------------
+COMBO KYO
+
+The standard SSJ Goku combo string generates enough meter to do another teleport. Essentially, the only thing preventing a 500-meter teleport from being an infinite is the limit on its consecutive use in a combo.
+
+The teleports make any successful hit convert into a combo from anywhere without commiting to a move, whether it be a shoryuken or a full-screen fireball. Cancelling a fireball into teleport to force a sudden direction change is something the rest of the cast can't do. A combo can become an immediate mix-up reset that requires a high/low guess in addition to the sudden direction change.
+
+On a somewhat related note, SSJ Goku's Teleport Attacks in Justice Mode are also way too good. They have a 7-tick start-up, but have no real cost attached, make any MoveContact attack safe, don't have damage scaling, start as well as enable combos, tracks opponents anywhere, and might be unblockable. You don't really want to use it to prolong combos. It's better to let save them for when they recover and restart.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+I would definitely consider going 1000 across the board for his teleports as well as increasing recovery time. As the move stands right now, Goku can actually generate a full meter and do 50% damage in a combo using all teleports allowed (no supers or EX moves) in an easy-to-execute combo. 
+
+Changes I'd suggest to teleport for now:
+Pause time removed on teleport and teleport attacks.
+1000 power cost if cancelled from any attack. 
+500 power cost if not cancelled. 
+Increased recovery time when not cancelled (assuming pause time removal isn't too harsh).
+Reduce the maximum amount of teleports allowed in a combo to 1.
+Reduce the maximum amount of teleports allowed in a combo while in Justice Mode to 3.
+
+Changes I'd make if this were my project:
+Change the name of Teleport to "Instant Transmission" if only SSJ Goku can use it, or change the name to "Rapid Movement" and give it to almost everyone.
+Add a cooldown timer that takes 4 seconds to recharge. Recharging stops if Rapid Movement is used during a combo, or a combo starts within one second of using Rapid Movement, and restarts once the combo is completed.
+No meter cost when Rapid Movement is not cancelled from an attack.
+Visual and audible prompts when the move's available again. The audible cue could be a basic saying from the character like, "Got a second wind!" Visual prompt likely a text blip under the lifebars briefly.
+
+Teleport Attacks are now blockable.
+Justice Mode now allows 2 Rapid Movements that use no meter and do not trigger a cooldown. 
+Justice Mode will end after both Rapid Movements are used and after a combo is finished (to allow a cheaper level 3 within the combo). 
+Hyper Rush now costs 1000 while in Justice Mode.
+Hyper Rush variants are determined by how many Rapid Movements were used in a combo. No Rapid Movements = Level 3 version. Two Rapid Movements = Level 1 version. Three Rapid Movements = Standard Shin Shoryuken version.
+Rapid Movement can be used when available to cancel a ground-based normal/special attack in progress if used while an opponent is using their Rapid Movement.
+Teleport Attacks are now called Rapid Attacks and are usable outside of Justice Mode as a move hit cancel off of special moves only. Costs 1000 meter and shares a cooldown timer with Rapid Movement.
+
+-----------------------------------------------------
+SENORFRO
+
+I'd make teleports cost 1000 meter across the board (with the exception being for a teleport Kamehameha).  If you want to prolong a combo, just go into Justice Mode.  Remember, for 2 levels of meter, you get access to 10 teleports.
+
+Come to think of it, there's no reason to not exploit Justice Mode.  He may lose Power Charge, but he gains meter at a decent enough rate to where it's not even needed.  Also, it transitions between rounds, and doing other supers (save for Hyper Rush) doesn't make it go away.  At least for Vegeta and Goku, their special modes had more drawbacks (time between fireballs and doing other supers for Vegeta/getting hit for Goku).  Theirs had more of a risk, but still had a nice reward for doing it.  Justice Mode has no down side and rakes in all the reward.
+
+-----------------------------------------------------
+BUCKUS
+
+For the teleports, I'd increase the time Goku's able to move/attack after the teleport by a few ticks to balance it. With the sHP, make it -3(maybe -4?) on block. It should be more unsafe since it's advancing and multi-hitting. It's a shame normal Goku gets no love cause he's a beast.
+
+-----------------------------------------------------
+DAERON
+
+Just a crazy idea for the teleport balancing:
+
+Goku should charge a teleport first in order to perform it,  it should be a special,like a small taunt or something, when you do it, then you can perform 1 tekeport.
+
+say... you perform down down + 2buttons,  goku flashes yellow while being vulnerable for a short time, your meter shows the 1000 or 500 loss.
+Then if you perform again down down + buttons you teleport (without yellow ex-move effect since you already did that on the charge move.
+
+The problem with this is that you only would be able to perform 1 teleport at the time, to prevent this, you could turn the "teleport charge" into a different imput, so you can do this 3 times in a row, and then have acces to 3 teleports.
+
+
+Another way could be turning the charge teleport into a super, lvl 1= one teleport, lvl 2= two teleports, lvl 3= 3 teleports.
+then since you spend a lot of meter, the teleport should not show the yellow ex-move effect
+
+I think the charge ideas is good because it helps the second player to tell when Ssj goku can potentially evade/move cancel/counter a projectyle.
+because nobody would dare to shoot stuff at goku when he gets 500 meter, but this way, enemy can tell if its safe or not because they saw Ssj Goku perform the charge.  "better watch out, kamehame is not a safe option now because he got a teleport"
+
+-----------------------------------------------------
+BYAKKO
+
+It might be fun to plan like 3 teleports in a row on different spots, and then start a combo and activate each teleport one by one in order, in the hope that you planned your trajectory correctly and don't miss. It might also make it more obvious that it's the Shunkan Idou and not your typical DBZ speed dash, everyone in the tournament videos keep saying "I dunno why only Goku has it, everyone can do that in the series" (except they never do it in the middle of simple combos, only in the "dragon rush" pursuit types of attacks that strongly knocks someone away)
+It will also be a lot harder (unless you don't try to plan several teleports ahead and just do them one by one). Dunno how well that would go, if it would make it just too difficult to use.

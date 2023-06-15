@@ -1,0 +1,113 @@
+Changes done to Gohan from Majin Build to recent:
+
+
+=[HDBZ] Updated sound file.
+=[HDBZ] Updated notification text graphics.
+=[HDBZ] Dash Collision bug fixed and effects removed/commented.
+
+=character converted to Mugen 1.0; all pause times fixed.
+=All normal  attacks have the attribute N (normal) in their hitdefs.
+=All special attacks have the attribute S (super)  in their hitdefs.
+=All super   attacks have the attribute H (hyper)  in their hitdefs.
+ Same for all the helpers.
+=Added
+  triggerall = !IsHelper
+ to explods 5938 (flip ko effect) and 20152 (twist ko effect).
+=AI balanced/updated.
+=New damage dampener added and fixed.
+=Airdash Down now only possible during Super Jump.
+=Fixed a colission problem with one of his Zero Counters.
+=Fixed a sound issue that occured when a Super Move was activated
+ at the exact same tick that a ground/wallbounce sound would play.
+=Applied all reversed command fixes
+
+=Add 3 ticks of start-up time to the f,f+MK attack.
+=Added more recovery time to f,f+MK on block to make it more punishable.
+=Air Dash Down can now only be done while super jumping.
+=Made s.HK x 2 -2 on block, think it's fairer than before now.
+=Added double bounce per combo (once from jSP and once from a downward Omni Kick (aerial db, d or df+SK).
+
+=Reduced enemy pushback on Ki Blasts (both normal and EX versions).
+
+=Added poweradd for the Diving Flurry Kick (he gains power when performing it, even if he doesn't hit).
+=Diving Kick Flurry now also gives power to the Unleashed Bar when in Unleashed Mode.
+=EX Diving Flurry Kick will not give power back.
+=EX version now causes a ground bounce.
+=Added chains for the landing state of EX Diving Kick Flurry: 
+ Lvl2 Super Kamehameha, Lvl 2 Masenko, Lvl 2 Soaring Dragon Strike.
+
+=Made the Weak and Medium versions of Hurricane Kick quicker and invincible at the start up.
+=Modified gravity of the Hurricane Kicks (EX version included) to show the entire animation of the attack.
+=Removed aura graphics from EX Hurricane Kicks (both straight and rising).
+=Rising Hurricane Kick Medium version second kick knocks up opponent higher enough so that 
+ when you punish someone in the air with it you can combo into another Rising Hurricane Kick.
+=Reduced pausetimes for the Hurricane Kicks and the Soaring Dragon Kicks. 
+ You'll see when you perform the medium and strong versions.
+=LK Hurricane Kick's landing pose can be cancelled into the LK/MK/SK Rising Hurricane Kick.
+=LK Hurricane Kick can now be supercancelled into the Super Hurricane Kick.
+
+=Added recovery time to Masenko.
+=Fixed the combo hitcount reset problem.
+=Fixed the falling sounds issue when an aerial enemy was hit by Masenko.
+=The Masenkos travel faster than before.
+=Increased Masenkos stun time and damage slightly.
+=s.LP -> Lvl1 Masenko combo possible (with good timing).
+=Lvl 2 Masenkos are unblockable.
+=Buffed damage for Lvl2 Masenko.
+=Returned Dizzy attributes of Masenko back to what they were, 
+ near instant BUT now it won't dizzy if the opponent is in a hit state when he begins the move.
+
+=New Lvl2 Masenko is similar to Lvl1 version with more hits and damage.
+=Moved Spark Masenko to Unleashed mode with extended hitbox.
+=Fixed an issue with comboing Ki Blasts into Lvl2 Masenko.
+=Fixed the issue of the Masenko projectile in some cases instantly disappearing. 
+=Added break-apart fx to the Masenko projectile.
+
+=Fixed Soaring Dragon Strike sometimes sending the enemy to the moon.
+=Soaring Dragon Strike Lvl2 damage slightly raised.
+
+=Sped up hits and reduced damage of Super Hurricane Kick.
+=Decreased width of twirl graphic and increased hitboxes.
+=Added more woosh sounds.
+
+=Pausemovetime and supermovetime for Super Kamehameha uncommented.
+
+=Earlier active counter frames (2 ticks instead of 6) on base Gekiretsu Ranbu.
+=Activation command for Ranbu is QCB,f+K
+=Ranbu damage damper now works as intended.
+=A little oversight has been fixed, regarding the amount of Super Moves and EX moves you can do in Destiny mode.
+
+=Reduced damage scaling on Super Hurricane Kick, Chou Kamehameha and Soaring Dragon Strike (Lvl1 and 2) from combos.
+
+=The j.SP that leads to the Gekiretsu Ranbu finishers won't kill the enemy if the right conditions are met.
+=Fixed the issue of the Bro Kamehameha (Finisher 3) coming out when Unleashed bar was below the Lvl1 threshold.
+=Nerfed damage of the Ranbu.
+=The command for Gekiretsu Ranbu is now QCB,F,any kick.
+
+=Emotion system now definitely called 'Destiny Mode' (we forgot whether it was Destiny or Unleashed mode).
+=Emotion system edited so the effects (dust, lightning) don't move when in superpause.
+=Replaced spark effects during Unleashed Mode power charge.
+=Destiny Mode Activation command is changed to d,d+MP+MK.
+=EX Special Moves don't drain from the Destiny Bar anymore. Instead they drain from the Power Bar as usual,
+ however they only cost 1/4 of 1 Power Bar stock instead of 1/2.
+=He can now do up to 3 LVL1 or LVL2 supers in emo mode before he leaves it. 
+ Seemed odd that LVL2 added more and needed twice as much emo meter to fire.
+=Nerfed the damage of the Finishers, adjusted accordingly.
+
+=updated small portraits.
+=Added new wall bounce effect.
+=Slash Chop yellow effects removed.
+=Dizzy stars moved 30 pixels upwards for Piccolo.
+=The power charge action now uses the mouth explods.
+=Facebook winpose bugs (kind of fixed, we worked around that)
+=Fixed intros: Bicycle and Car Crash: while landing Gohan usually ended up move a bit to the left or to the right 
+ depending on the stage you were on; to fix this I made Gohan invisible for 1 tick, 
+ set the fvar(29) as the original Pos x, then added 1 tick to the other state controllers to make the intro/s work.
+ The fixes were added into state 19200 (system.cns) and state 52 (override.cns).
+
+
+=Added alternate costume, courtesy of Chamat and Ethan the Human.
+ To use it, go to the 'chars' folder and rename the 'GohanZ2' folder to 'GohanZ2Alternate'.
+ Next, go inside the 'data' folder and open the 'select' file using a .txt program.
+ Find 'GohanZ2' and change it to 'GohanZ2Alternate', then save the file. Then run HyperDBZ.
+ If you did all the steps correctly, the alternate costumed Gohan will be available.

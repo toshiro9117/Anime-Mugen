@@ -1,0 +1,44 @@
+[Info]
+name		= "SSJ Goku Z2"
+displayname	= "SSJ Goku"
+versiondate	= 06,11,2016
+mugenversion	= 1.0
+author		= "Team Z2"
+pal.defaults	= 1,2,3,4,6,7,8,9,10,11,12
+;Original authors: Balthazar and Cybaster.
+;Adjustments implemented by AlexSin.
+
+[Files]
+sprite		= files\goku.sff
+anim		= files\goku.air
+sound		= files\goku-jap-bl.snd
+cmd		= files\goku.mfg
+cns		= states\constants.cns
+stcommon		= common1.cns
+st		= states\system.cns
+st2		= states\helpers.cns
+st3		= states\state-2-3.cns
+st4		= states\override.cns
+st5		= states\normals.cns
+st6		= states\specials.cns
+st7		= states\supers.cns
+st8		= config.txt
+
+
+
+pal1		= palettes\TeamZ2-DefaultSSJ.act
+pal2		= palettes\TeamZ2-WhisGi.act
+pal3		= palettes\TeamZ2-GT.act
+pal4		= palettes\TeamZ2-AltSSJ.act
+pal5		= palettes\TeamZ2-Yadrat.act
+pal6		= palettes\TeamZ2-Casual.act
+pal7		= palettes\TeamZ2-Blue.act
+pal8		= palettes\TeamZ2-FalseSSJ.act
+pal9		= palettes\TeamZ2-SuperVegito.act
+pal10		= palettes\TeamZ2-BlueShirt.act
+pal11		= palettes\TeamZ2-Black.act
+pal12		= palettes\TeamZ2-Legendary.act
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

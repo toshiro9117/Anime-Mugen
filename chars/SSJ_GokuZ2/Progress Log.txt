@@ -1,0 +1,633 @@
+ALPHA 1 (started 27/10/2012) :
+- Added all basic stuff in SFF (stance, walk, jump, run, etc.)
+- Added all possible GetHits (missing thrown)
+- Grabbing.
+- s.LK
+- s.MK close
+- s.SK
+- s.LP
+- s.LP Close
+- s.MP
+- c.LK
+- c.MK
+- c.LP, c.MP
+- a.LP, a.MP, a.SP
+- a.LK, a.MK, a.SK
+- Updated small portrait, new big portrait
+- Midnight Bliss
+- Dive Kick and EX Dive Kick
+- Ki Blast
+- Snap Kick (as punch zero counter and s.SK2)
+- Zero Counters : air punch (blast punch) and air kick (boomerang kick)
+- Cleaned SFF and AIR a little.
+- Toskomics winpose (hold kick)
+- Back to normal winpose (hold punch)
+- 360 split (s.SK*3, c.SK)
+- s.MK (new version)
+
+ALPHA 2 :
+- s.SP
+- Stance is slower.
+- c.SK goes higher but not so far x-wise (didn't change blur max).
+- Changed hitting sprite during close s.LP (feels odd since it's a sprite where his elbow goes down).
+- s.MK puts back in position at the end.
+- Blur Max chaining is much smoother.
+- Power Charge with Aura FX.
+- Dizzy animation.
+- Fury Uppercut and c.SP
+- all 3 kicks for his Blur Max combo have the same hitsound.
+- Longer startup time for Dive Kick.
+- Added Ex sound to EX Dive Kick.
+- c.SK makes opponent fall (knocked out, not tripped).
+- Set the palettes up to 12.
+- Added aura sound to moves with aura.
+- Added thrown sprites.
+
+ALPHA 3 :
+- Added missing sprite to s.LP close.
+- s.SP sucks in P2. Last hit puts P2 in gut hit anim.
+- 360 Split : jumps higher, more hangtime in air, stays in air longer, more delay for s.SK3 version.
+- Added Aura Burst sound.
+- Added "revert to normal" sound for winpose.
+- New LP,MP,LK,LK hitsounds.
++ G-Pressure (aka Ex Ki Blast).
++ Multi-hit Kick Zero Counter.
++ Fist pump winpose.
+- 164 new palettes !!! o_o
+
+ALPHA 4 :
+- Renamed palette Balthazar-ShinButhouden2 to Balthazar-SuperButhouden2.
+- Zero Kick Counter is faster and last hit has SK hitsound.
+- Increased hitbox on a.MK.
++ Blast Fist, as well as EX version.
++ Wing Kick (Overhead attack, can be combo'd into s.SK).
+- Added graphical effect to G-Pressure.
++ Focus Smash.
+- Added front layer to Power Charge aura FX.
+- Added aura burst SFX to Punch Zero Counter and Slashdown Kick.
+- G-Pressure comboable from Ki Blast.
+- New MP/MK hitsounds.
+
+BETA 1 :
++ Teleport move (command configurable).
+- a.MK should hit more easily.
+- Corrected colors for portrait, Focus Smash and Wing Kick (color problems).
+- Removed some leftover code.
+- Fixed hitsound during Blast Fist.
+- EX Blast FIst : Goku falls slower and has much more recovery time.
+- s.SP > c.SK is possible.
+- s.SK2 has more recovery time to avoid infinites.
+- G-Pressure can hit a bounced opponent when performed a 2nd time. Doesn't bounce again.
+- G-Pressure adds to the combo meter properly.
+- Removed frame from Blast Fist fall animation.
+- Fixed "front power charge aura" bug (not disappearing when hit).
+- Teleport has PalFX and EX sound.
+- s.SP gives less power.
+- Can cancel s.SK2 into specials.
+- Recovery animation added.
+- Blast Fist deals more damage.
+- Added last gut hit for s.SP.
++ Air Kamehameha Lv1.
++ Ground Kamehameha Lv1.
+
+BETA 2 :
+- Longer recovery time for Kmh.
+- Changed air teleport height on aerial P2.
+- Changed Blast Fist hitsounds.
+- Fade out animation during teleport.
+- Toskomics winpose sprite update.
+- Can cancel Blast Fist into aerial Kamehameha.
+- New aerial dash forward animation.
+- Less vibrant colors at the end of "back to normal" winpose.
+- Fixed various triggers in CMD (left-out code from Goku Z2).
++ Reverse throw.
++ Sonic Rush (qcf*2+K, only hits aerial opponents, doesn't take damage dampener into account).
+
+BETA 3 :
+- Removed "exclamation effect" from Sonic Rush final attack.
+- Throw : delayed the part just right after the sweep and just before the teleport.
++ Chou Kamehameha (Added animation for Chou Kmh charge and synched lips).
+- Started readme.
+- Sonic Rush : gut punch hits now.
+- Sonic Rush : uses power charge sound during superpause.
+- Teleport effects all follow the same direction.
+- Teleport helper can't be hit anymore ... IMA STUPID.
+- Blast FIst gives back much less power.
+- Fixed "front power charge aura" bug.
+- Updated "prevent crossup" code (Zzyzzyxx fix).
+- Removed delay from Blast Fist explosion sound.
+- Added motion to Sonic Rush superpause.
++ Coded Sonic Rush 45° (holding Fwd during superpause).
+- New MP hitsound.
+- Blur Mega and 360 Split have lower guardpauses.
+- Added landing sound to 360 Split Kick/c.SK.
+- Gave the Super Gut Hit sound effect to the first hit of the Sonic Rush, Blast Fist, and the last hit of his s.SP.
+- Fixed a few pixels on fistpump winpose.
+- Fixed Ki Blast -> (Chou) Kamehameha not chaining anymore.
++ Supersonic Rush.
++ Added teleport during Kamehameha (Ground and air).
++ Hyper Dimension intro.
+
+BETA 4 :
+- Fixed Backward throw a little.
+- Knee attack for 45° (Super)Sonic Rush.
++ Beam Collision compatibility with Goku and Vegeta.
++ Beam Collision Super Portrait.
+- Corrected Dash Collision damage.
+- The hyper dimension intro has the "transformation" sound.
+- Last kick of Supersonic Rush has the pause as long as the one in the Lv1 version.
+- Replaced the 2nd frame of power-up animation with new one.
+- Replaced Dive Kick FX.
+- Added desaturate overlay to Hyper Dimension intro.
++ Long SSJ Transformation intro.
+- 11 new palettes
+- "Back to normal" winpose only possible at last round.
++ Forward Throw (based on Backward Throw).
+- Slower teleport during Kamehameha, to give P2 more time to react.
+- Added Super BG to (super)sonic rush.
+- Replaced Lv1 Kamehameha launch sound effect with a new one.
+- Added "beam fade fatalaty" sound to Chou Kmh fatality.
++ SSJ3 winpose (perfect winpose + Start)
+- Updated Blast Fist sprites and stretch intro sprites.
+- Updated "back to normal" winpose with new frames.
+- Totally unfinished version of Air Chou Kmh (just need to send this to Balthazar before Christmas :P)
+
+BETA 5 :
+- Launch sound for Kmh only played once, not when hitting.
+- Fixed cutscene SSJ intro removing explods/effects after a few seconds...
+- Added Flash FX to Air (Chou) Kamehameha.
++ Chase winpose : Superman.
++ Chase winpose : Mario.
++ Chase winpose : Arale.
++ Chase winpose : Megaman.
++ Chase winpose : Genocide.
++ Chase winpose : Viewtiful Joe.
++ Chase winpose : Mew + Mewtwo.
++ Chase winpose : Scott + Nega Scott.
++ Chase winpose : Kirby.
++ Chase winpose : Janemba.
++ Chase winpose : Robot Unicorn Attack.
++ Chase winpose : Doraemon.
+- Animation update to cinematic SSJ transform intro.
+- Also updated short SSJ intro and power charge end.
+- 1 new palette : CGU-cps3.
++ Chase Winpose : Super Sonic.
+
+BETA 6 :
+- Improved Cinematic SSJ intro : changed scream voice, added lightning and sounds, added darkening effect on stage, added power-up SFX.
+- Fixed PalFX flickering at beginning of SSJ Transform intro.
+- Fixed launching sound doubling during Aerial Kamehameha (had forgotten to fix this one).
+- EX Blast Fist explosion sounds fixed.
+- Realigned Charge Ball FX during air Chou kmh superpause.
+- Tweaked Robot Unicorn winpose : unicorn appears a little later, and they slightly weave up and down on the special screen.
+- Genocide now floats in the air instead of flying fast.
+- Lowered some cameos so they appear on screen entirely.
+- Power-up in the air during cameo winpose now lasts twice longer.
+- Lowered Goku when he dashes up during cameo winpose.
++ New Reverse Throw.
+- Super Sonic dashes out faster.
++ Hyper Rush.
+
+BETA 7 :
+- Can combo : Air Kmh > Air Chou Kmh.
+- Super Sonic is even faster. Only using the long beam animation.
+- Camera doesn't follow P2 during reverse throw.
+- Less lightning at the end of SSJ transformation.
+- Mouth closes earlier during SSJ transform intro (but not too much, otherwise the transformation is too short).
+- Hyper Rush fixes :
+	* Changed Shin Shoryuken sounds.
+	* Removed 2nd "Haa!" voice during shin shoryuken.
+	* Afterimages during Hyper Rush are more yellow than green.
+	* Lowered slightly fighters during 3rd hit of Shin Shoryuken.
+	* New Shin Shoryuken hitsparks.
+	* At the end of Shin Shoryuken, Goku and P2 fall on the ground at the same time.
+	* Changed Hyper Rush command to qcf,hcb+K.
+- Hopefully fixed this bug (tell me) : with Up Chou Kmh, I killed an enemy with it after he wall-bounced, and his fade fatalaty was mirrored, completely ignoring the direction of the beam.
+- Added sounds to Reverse Throw.
+- Removed misplaced Flash FX when chaining Kamehameha > Chou Kamehameha.
+- Fixed aura placement during SSJ3 winpose.
+- Cameo winpose : Goku has the air dash anim and Super Sonic aura when dashing out of the screen.
+- Fade fatality faces right direction for Air Chou Kamehameha now.
+- Added teleport limiter : can't teleport more than 3 times in a single combo.
+- Replaced Kick Zero Counter by Wing Kick.
++ Chase winpose : Axe Cop !!!
+- Mouth closes at the end of SSJ3 winpose.
++ Coded basic Justice mode activation (qcf,hcb+P).
+
+BETA 8 :
+- Removed flickering bug from Hyper Dimension intro.
+- Shin Shoryuken, 3rd hit : camera better centered on players, players go higher in the air afterwards.
+- Fixed Goku shifting position during SSJ3 winpose.
+- Sooner ctrl to Goku after reverse throw.
+- Added a config variable to enable/disable cut-out animation.
+- Axe Cop winpose :
+	+ Shells don't fade out.
+	+ Falling on ground sound gets played all along.
+	+ Amplitude of envshake goes up and down as T-Rex comes in/out of screen.
+	+ Goku teleports in front of screen with larger sprites, floating in the air.
+- Realigned flash FX during air Chou Kmh (was in fact a problem of timing).
+- Wing Kick can be combo'd into Blast Fist.
+- Changed palettes a little, but you'll have to use your own selection yourself.
+- Added "wha" voice to Goku during cameo winposes.
++ New Standing Kick Zero Counter (again) : Slinding Kick.
+- Can teleport up to 5 times during a combo in Justice mode.
+- Added fading in animation to Full Screen Robo Unicorn winpose.
+- Using long "aura FX trail" when Goku air dashes out of screen during all cameo winposes.
++ Finisher 2 : Ultimate Kamehameha.
+
+BETA 9 :
+- Ultimate Kamehameha :	
+	+ Removed scaling down during beam hit.
+	+ Fixed transition between Shin Shoryuken and charging part.
+	+ P2 falls from the air later.
+	+ Fixed positionning bug when P2 is in the corner of the stage.
+	+ Added hands overlay on huge beam.
+- Replaced 2nd Shin Shoryuken hitsound by 1st one.
+- Long SSJ intro scream stop when skipping the intro.
+- Changed Sliding Kick SFX.
++ Chase winpose : Taopaipai.
+- Updated readme.
+- Fixed "ugly hair" in cinematic SSJ intro.
++ Chase winpose : Frog.
+- Added Super BG to Hyper Rush.
+- Fade in for Robot Unicorn is 30% faster.
+- Added eye overlay for SSJ transformation intro.
+- Added voices to : Viewtiful Joe, Superman, Scott Pilgrim.
+- Disabled power charge during Justice Mode.
+- Wing Kick > 360 Split Kick is now possible.
+- Added 4 new palettes : 2 by Balthazar, 2 by dishamonpow.
+- Fixed power-up sound loop for cinematic SSJ transformation intro.
+- Added speech to power down winpose.
+- Warp Kamehameha animation tweaked to keep only the blurry sprites.
+- Updated 3rd and 7th sprite of Sonic Rush animation.
++ Boulder lifting intro.
++ Taunt (arms crossed).
++ Chase winpose : Tetsuo.
++ Chase winpose : Zero on bike.
++ Chase winpose : Suppaman.
++ Justice mode activation animation.
++ Chase winpose : Super Cow.
++ Chase winpose : Luffy.
+
+BETA 10 :
++ Teleport Attack : Bicycle Kick.
+- Added shadow to the boulder.
+- Added boulder lifting sound.
+- Fixed Zero on bike cameo.
+- Fixed lift arm winpose speeches (moved voices of place, making this winpose bug ...)
+- Changed scream SFX during Justice Activation state.
+- Suppaman goes faster, hitspark and hitsound added.
+- Added 2 random voices for Suppaman.
+- Suppaman kills Goku if Goku has less than 30 life left.
+- Fixed alignment during Doreamon winpose.
+- Quicker fade out during robo unicorn winpose.
+- Fixed head positioning during SSJ3 winpose.
+- Added dramatic SFX sound during fade fatality for Aerial Chou Kmh and Chou Kmh up.
+- Fixed palette sharing for Dash Aura in cameo winpose and Robo Unicorn fullscreen sequence.
+- Added a flying sound effect for Robo Unicorn special screen.
+- Added slight pause to teleport attacks to make them more useful.
+- Added new frame to boulder intro and made Goku go higher.
+- On the diagonal up Chou Kamehameha, Goku recovers a little slower, so the beam anim looks good when shrinking.
+- When killing p2 with the Ultimate Kamehameha, blue hands-overlay don't appear on screen anymore.
+- Changed Justice activation animation to hunched power-up pose only.
+- Added blue hands overlay to regular Chou Kamehameha.
+- Added Snap Kick at the end of reverse throw.
+- Teleporting gives more and more Justice bar as it is performed in a single combo.
+- Tweaked Goku's position during Ultimate Kmh charge state. He's centered now, and it should look much better.
++ Teleport Attack : Flash Kick.
+- Updated readme a little.
+- Changed Kinton woosh sound in Luffy cameo.
+- Fixed bounce juggling state modifying opponent's var(6).
++ Teleport attack : Smash Punch.
+- Hyper Rush only costs 2000 power during Justice Mode.
+- Changed hitsound for single hit that pushes P2 during Ultimate Kmh.
+
+BETA 11 :
+- Included palette chart folder.
+- Changed Justice mode command to D,D,D+y+b
+- Snap Kick comes out right after the throw in Reverse Throw.
+- Made Justice Activation a little bit shorter.
+- P2 falls down earlier after Shin Shoryuken during ultimate Kmh.
+- Better lipsynch for power down winpose.
+- Beam scales more Y-wise until white screen, during ultimate kmh.
+- Ball FX during (Air) Chou Kmh superpause disappears properly (not 1 tick late).
+- Added super KO backgrounds to Teleport Attacks.
+- Limited teleport attacks to 3 in a single combo during Justice mode.
++ Update to Mario Cameo : added Bowser, koopas and Luigi.
+- Delayed teleporting in Axe Cop cameo winpose if Goku is in the far corner.
+- Robo Unicorn shoudn't be visible on screen anymore after the initial passing.
+- Fixed delay in Smash Punch teleport attack voice (I think).
+- Added frog croak and theme to frog cameo winpose.
+- Hands overlay doesn't appear during Chou Kmh fatality anymore... Finally removed it completely for consistency with diagonal version.
+- Added "P2 pushed" sound during Ultimate Kmh.
+- Added Tony Chopper to Luffy cameo winpose.
+? Hopefully fixed flashes for Air Chou Kamehameha... not sure. o_o
+- Added lipsynch to Air Chou Kmh and Ultimate Kmh.
+- Goku jumps slightly higher when throwing the boulder away.
+- Robo Unicorn : floating up and down has been smoothened.
+- Replaced Chou Kmh beam FX by new ones (more vibrant colors).
++ Finished Air Chou Kamehameha.
+- Slight readme update.
++ Chase winpose : Powerpuff Girls.
+
+BETA 12 : 
+- Changed hitsound for snap kick during reverse throw.
+- Powerpuff Girls go a little faster.
+- Changed ordering of beam/head sprites during Chou Kmh.
+- Added laugh to Janemba cameo winpose.
+- Air Chou Kmh doesn't have multiple beam heads anymore.
+
+BETA-TEST (RC1) :
+- Listed Jango Swanson as Jango.
+- Added trigger for "basic limiter" helper to avoid lagging on slow computers.
+- Fixed Focus, Focus, Focus... infinite (hopefully).
+- Fixed Focus Smash FX position when performed in the corner.
+- G-Pressure doesn't miss up close.
+- Made Hyper Rush Lv3 easier to gain.
+- EX Blast Fist palFX disappears at the peak of the move.
+- Twice less hitsounds during Ultimate Kmh beam hit.
+- Goku should fall on the ground when hit our of Air Chou Kmh. Flash FX should disappear too.
+- Removed yellow PalFX during Hyper Rush.
+- When blocked, Wing Kick doesn't allow any follow-ups (apart from teleports).
+- No shadow during (Super) Sonic Rush charge.
+- Better synch between black BG and anims during Sonic Rush.
+- Can't perform aerial attacks during the startup of the air dash.
+- Wing Kick goes slightly less far.
+- Added landing sound to Wing Kick.
+- More recovery time for Hyper Rush when blocked.
+- Air chains should be reliable now (tested VS POTS Geese with autorecover).
+- Goku can't appear under the ground during Teleport Attack - Smash Punch.
+- Blast Fist has higher red CLSNs at startup.
+- Charge ball FX during Ultimate Kmh disappears at the right moment.
+- During Justice mode, added an additional dampener, multiplying damage by 0.85.
+- a.SP doesn't knock down grounded opponent anymore.
+- Air Chou Kmh properly collides with the ground at the end.
+- Air Chou Kmh ground hit wave has proper hitpause for P2.
+- Justice Mode disappears correctly at the end of Hyper Rush (when it misses or there's no finisher).
+- Fixed hitground wave overlapping Air Chou Kmh fatality.
+- Included new anime-ish sounds (jump, superjump, airdash, ki blast, strong punch, strong kick).
+- Fixed miscolored pixels on 4th frame of Chou Kmh Up launch.
+- Hopefully fixed bugs in Mugen 1.0 (720p stages played in HR - Mugen played in widescreen format) for P2 passing through Ultimate Kamehameha.
+- Lowered hitpause from 8 to 6 for s.SP.
++ Finisher 1 : Sonic Beatdown.
+
+RC2 :
+- Strong Ki Blast has the same throw sound as LP and MP Ki Blasts.
+- Changed hitsounds for (Super)sonic Rush flurry punch.
+- Added more envshake to Gut Punch during Sonic Beatdown.
+- Added new jump sound to Blast Fist.
+- Justice mode lasts between rounds.
+- Readded "hehe!" voice during Toskosmics winpose.
+- Fixed recovery problem in a.SP.
+- P2 falls a little slower into his finishers.
+- Goku moves up a little during the Final Punch loop in Sonic Beatdown, to give more "range" to the move visually.
+- P2 stays down properly if killed by Sonic Beatdown.
+- Fixed teleport afterimage appearing by error when Goku is sent to a custom state.
+- Air comboing is even safer now (tested VS Infinite's Krauser).
+- Added power-up SFX to Sonic Beatdown.
+- Added 'Ultimate Kamehameha Hitbreak' sound effect before the final punch in Sonic Beatdown.
+- Added 'kaiyoken sfx' to Gut Punch and Final Punch in Sonic Beatdown.
+- Added Goku voices for initial charge and final punch in Sonic Beatdown.
++ Added strategy guide by C.A.N
+- New jump back end sprites.
++ First version of Buu Genkidama finisher.
+
+RC3 : 
+- Added woosh sound to Arale.
+- Added voice samples to Supercow and Tetsuo.
+- Can cancel Kamehameha Up into Chou Kamehameaha.
+- New KO sound.
+- New guard sound.
+- More dust on Genkidama.
+- The Genki Dama ball starts scaling when the white fade-out starts.
+- Fixed normal hair and 3rd sprite of relaxed push loop animation.
+- Removed black flash transition sprite when going to final power boost pose.
+- Genkidama stays in place a little while before going forward and hitting.
+- 3rd sprite added to Final Push animation.
+- Updated salute to push animation.
+- Bye Bye Genkidama SOUNDS :
+	+ Added 'power-down' sound as Goku transfers from SSJ to normal, in the uppercut-Genki Dama transition.
+	+ A sound for the scene showing Goku transform and salute: added the 'pushing the genkidama' as soon as that scene starts please.
+	+ New sound effect for when he throws the Genki Dama (spiritbomb_fire).
+	+ Sounds for the flashes he has prior to actually transforming ('aura burst' sounds)
+	+ Beam struggle sound playing whenever the Genki Dama is on screen.
+	+ Added a voice (yell, really) for Goku as he does the powerboost.
+	+ Sound effect for when he does the actual powerboost (genkidama powerboost).
+	+ A sound leading up to Goku's transformation in the transform and salute scene ('Ultimate Kamehameha hitbreak').
+	+ Added "see ya" voice and mouth animation.
+- Tweaked Buffer/justice bar. You should be able to get the flame kanji now, if you teleport a lot of times in the same combo (teleports, NOT teleport attacks only).
+- Goku is panned in the middle of the screen during Genkidama startup.
+- Updated SSJ transformation intro with new normal/SSJ hair during power-up (also changed SSJ3 winpose, but can be reversed if wanted).
+- Added adadadada voice to Sonic Beatdown.
+- Fix Sonic Beatdown aura loop sound cut-off when winning with a KO. 
++ Weights winpose (without Kaio).
+
+RC4 : 
+- Normal/SSJ hair appears at the right place in cine intro/SSJ3 winpose/Justice activation.
++ Added Kaio jumping in for weight winpose and doing his magic trick.
+- Replaced 3rd sprite in the loop SSJ push by a real fixed one.
+- New whiff sounds during weights winpose.
+- Struggles longer during weights winpose. Yells a little sooner.
+- Replaced guard sound for all attacks.
+- Can combo G-Pressure > Chou Kmh without the wall bounce.
+- Added kaioyoken flying sound on Super Sonic.
+- Added the beam clash sound right after he's tossed the Genki and it's flying through the air.
+- "Yanaa" voice during salute appears earlier.
+- Removed yellow flash when he does the final push on Genki finisher.
+- Added 10 TON notification to weights winpose.
+- Added "overcoming weights" sound.
+- Fixed FG appearing during beam fatality.
++ Bec Noir (Homestuck) cameo.
++ Broli cameo !!!!! RWWAAARRR !!!
+
+RC5 :
+- Fixed Broli voice and removed laugh. DOH!
+- Bigger delay after the final push showing Goku, before cutting to p2 getting hit.
+- Weights winpose : added magic trick sound and changed woosh sounds.
++ Cursed state for compatibility with Shredder & Anakaris.
+- Added dust to Broly, not sure I like it.
+- After an Aerial (Chou) Kamehameha, Goku is displayed in his new backwards jump floating down sprites.
++ Kaio car crash winpose (with the smooth Goku transition anim).
+- Updated big dodge sprites for Axe Cop winpose.
+- Bigger hitbox for a.SP.
+- Slowed down speed at which Genkidama is thrown.
+- Lower damage dampener for Kamehameha.
+- Added 2nd 'ultimate kamehameha hitbreak' sound to Bye Bye Genkidama push powerup.
++ Kaio and Goku are pimps in the perfect winpose.
+- Added Koopa wings flying sound.
+- Removed ground hit sound for P2 at the end of Sonic Beatdown.
+- Centered Goku and P2 better Y-wise during Ultimate Kamehameha.
+- Hopefully removed the "Jump LP x3, Land, repeat" infinite VS enormous characters.
++ New taunt : leaning back against Kinton.
++ Genkidama dissolve fatality.
++ New cameo winpose : Megaman X.
+- Centered Goku and P2 during Sonic Beatdown.
+
+RC6 :
+- Added a sound effect for the eye in the cut-out changing to emerald ssj green.
+- Removed crash shutter sound from Kaio car winpose.
+- Added Dabura voice to Kaio winpose ... LOL
+- Goku walks towards P2 before the Kaio car winpose.
+- Envshake during Sonic Beatdown's Gut Punch is cleaner.
+- Black BG is removed earlier at the end of Sonic Beatdown.
+- Car goes up and down during pimp winpose.
+- aura loop sound during Genkidama final push should sound better now.
+- Used a required sprite for radial fatality.
+- Added Open mouth sprite during Sonic Beatdown charge loop.
+
+RC7 (final beta-testing) :
+- Kinton is binded to Goku when velX=0.
+- Slightly lowered kinton (taunt) sounds.
+- P2 is KO'd correctly if Hyper Rush is performed with a Lvl 0 Justice bar.
+- noBG goes away later at the end of Hyper Rush.
+- Longer white screen when Genkidama doesn't kill P2, for a more dramatic effect.
+- 4 new palettes by Gogngos.
+- Slightly updated Zero on Bike cameo.
+- Slightly repositioned P2 during Ultimate Kmh.
+- Added kinton leaning as 5th intro.
+- When Goku looses the fight, his hair returns to black.
+- Added a sound effect for when Ultimate Kmh grows and hits.
+- Updated Air Fall GetHit (anim 5030, 5035) to ensure better compatibility with other opponents (e.g. Bluestreak)
+- Removed beam fatality when there's more than one opponent, to avoid Mugen freezing.
+
+POST RELEASE UPDATE :
+- Changed the name Ikari to Moon Girard.
+- Fixed typo in readme (Rage/Justice).
+- Can't move before round starts during teleport in and kinton intros.
+- Justice mode is activated only after the superpause during Justice mode activation.
+- Disabled Kaio car winpose in case of a fatality, to prevent infinite walk.
+- Opponent cannot recover from Flash Kick teleport attack.
+- No more "revert to normal" sound when Goku is disintegrated by a Chou Kamehameha.
+- Kinton during taunt is now affected by an enemy pause.
+- Added alt small portrait by aldo7246.
+- Fixed Beam Clash win state having display problems.
+- 2 additional startup ticks for Dive Kick, hopefully fixing Dive Kick infinite by NxL.
+- Uppercut > Hyper Rush doesn't cause Rajaa's Necro to go out of the Hyper Rush gethit state anymore.
+- Removed a spawning helper from Slashdown Kick, to avoid slowdowns on slower systems.
+
+--------------------------------------------
+OTHER UPDATE (sent to Balthazar 25/08):
+- Fixed Broken Back "arms+legs" bug.
+- Focus Hammer makes the opponent fall if performed during a combo, to fix infinites.
+- Intro vs Vegeta Z2.
+- Repel projectile is correct vs Z2 chars.
+- Changed Ki Blast hitsound.
+- New vs Freeza intro sprite.
+- New woosh sound during Slash Chop.
+- Air Kamehameha is not an overhead anymore.
+- Added bindtime=-1 to Flash FX during Chou Kamehameha.
+- Changed variable and changeanim behaviour in Air Chou Kamehameha to avoid red CLSN box problems when the beam doesn't connect.
+- Slightly edited aerial basics' pausetimes and slidetimes.
+- Goku gets vels immediately at end of Air Chou Kamehameha, before falling down.
+- New Lv1 Superspark and new Lv1+Lv2 supersound.
++ English voice patch by Jweezy added to SND file, selectable in config file.
+- Justice bar raises a lot only if teleport attack actually connects (only raises a little bit otherwise).
+
+(Sent to Balthazar, Iced and BlueSunStudios : 06/10)
+- 2 new palettes by Balthazar : Balthazar-SSW2ssj_Alt and Balthazar-SSW2ssj_v2.
+- Fixed Slashdown Kick FX staying one tick too long when landing.
+- Fixed English voice using JAP sounds (grab miss and quick recovery).
+- Added regular hitsounds to Blast Fist.
+- Removed dust FX from Broly winpose.
+- Inverted Scott and Nega Scott in the Scott Pilgrim winpose.
+- Added woosh sounds to Mario and Luigi during winpose, and laugh+pos sounds to Bowser.
+- Readded (how did it disappear?) power-up sound during Super Sonic winpose.
+- Using regular SK woosh sound for s.SK*3 combo (blur mega/max) and c.SK.
+- Finisher 1 : shorter transition between gut punch and final blow, so it's more dynamic.
+- New Blast Fist falling back to ground sprites.
+NEW UPDATE (sent 12/10):
++ Color separation by BlueSunStudios.
+- New CS palettes by BlueSunStudios, Quickfist and Bomberman.
+- Fixed throw and SSJ3 winpose voices for English voice mode.
+- Updated readme.
++ AI by Infinite.
++ Updated palette chart.
+> 5 new palettes by Bomberman, 7 new palettes by Ness the Avatar
+PRE RELEASE FIXES (13/10) :
+- Fixed woosh sound for Snap Kick during reverse throw.
+- Fixed SSJ Goku automatically doing Hyper Rush in Justice Mode when he reaches Lv2 superbar.
+- Added a time restraint to Warp Kamehameha for the AI (didn't test it, LOL).
+- (Super) Sonic Rush Forward is possible again when holding forward.
+- Fixed Super Sonic speed sound during winpose (hopefully).
+- Goku walks properly to P2 during the "Kaio car winpose".
+- Added a fix for positionning vs Freeza intro, on faulty stages.
+- Fixed Zero Counter woosh sounds.
++ New palettes : 2 by Ness_The_Avatar (chart already done), 10 by Quickfist, 9 by Gogngos (4 updates in "extra", 5 new in "CS_pals"), 5 by Girard, 9 by Sabockee, 1 by BlueSunStudios
+- Lipsynch for Kaio car winpose. Even did it for both English and Japanese voice!
+
+--------------------------------------------
+After the new release (sent 08/07) :
+- Fixed Beam Collision portrait alignment
+- Fixed squarish shape appearing at end of Air Chou Kamehameha.
+- Fixed Air Kmh -> Teleport not working anymore (09/04)
+- Ex Ki Blast > Chou Kmh as P2 hits the wall doesn't cause P2 to turn into weird things anymore (but there's still debug flood).
+- Super DBZ super BG has no lifebars.
+- New colored Nimbus sprites.
+- Startup on throws reduced to 4 ticks, and recovery time set up to 18 ticks.
+- s.SP is -6 on block now, making it much easier to punish.
+- Louder beam sound (2480,0)
+- Removed beam counter system. FIXING THIS SHIT LOL : https://www.youtube.com/watch?v=4sAMVAyfNdw&feature=youtu.be
+- SSJ Goku's AI doesn't activate when Goku is in challenge mode.
+- New Chou Kamehameha FX.
+- In the Kaio car winpose, Kaio only has 2 antennas instead of 4 after hitting Goku.
+- Correct voice displayed when SSJ Goku wins Dash Collision.
+- Added charging/power-up sound that gets more intense over time to (Air) Chou Kamehameha charge (2400,20).
+- Dive Kick has 15 ticks of startup instead of 12, hopefully fixing the infinite (?).
+- Altered Cheap KO animation to make him go directly to dead position.
+- Removed BlueSun's edit to SSJ Goku's mouth on Perfect winpose, giving him back his gangsta style.
+- Added noFG, noBG, noBarDisplay to fatality states.
+- Can't airguard anymore if jumping forward or if you have air dashed (fix by Websta in Freeza).
+- Changed the cost for Teleport :
+	+ 1000 power cost if cancelled from any attack. 
+	+ 500 power cost if not cancelled. 
+- Added 9 ticks of recovery time to Chou Kmh to avoid comboin into a normal in the corner. This harmonizes it with other Z2 chars.
+- Made Teleport Attacks blockable.
+- Corrected a bug where Teleport Attacks where performable only twice during a combo.
+- In Justice Mode, Teleport Kamehameha adds power to the Justice Bar.
+
+--------------------------------------------
+AFTER HDBZ EVO Update :
+- Realigned sprite 5020,10
+- Added XG's piece of coded to avoid a double KO sound when killed by Vegeta's Royal Edict.
+- Updated woosh LK (0,3) / woosh SP (0,2) / impact SP (5,2) sounds.
+
+------------------------------------------------------------------
+MEEHHH : 
+? OK There are DEFINITELY still connects in his Blast Fists that DON'T give off the hitsound effect. it mostly happens when you're catching a jumping opponent that sounsd are missing.
+? After the strong kick command combo, if you perform an OTG after it the opponent can air recover.
+- Jump MK > Dive Kick, Focus, LP > HP > HK > HK > Ki Blast x 3, Teleport, repeat. Maximum of 4 loops. Still, it's a 40+ hit combo that requires only 500 power.
+? Kamehameha and Chou Kamehameha seem a bit too safe when blocked up close, -1 and +4 frames respectively.
+? Ultimate Kmh : I think the delay between the white faded-out screen and showing p2 getting vaporized (when in the last round) can be a bit smaller.
+
+
+IMPOSSIBLE TO REPRODUCE :
+? I've also noticed an oddity when you use the throw of certain Z2 characters against Jesuszilla's CvS characters, where if you throw them backwards they'll bounce in the opposite direction when they hit the ground.
+? I encountered a strange bug that I can't seem to repeat :do you know when you hit the ground after being hit by a strong kick in the air (p1 and p2 in air), and there is the FX on ground? Well, once I shot some fireballs and that FX followed the blast, even when I taunt that FX followed the Kinton; again, I don't know how I did that.
+? I was P1 and my cousin was Vegita Z2. I believe he did his hop forward kick, I blocked it, and got stuck in block. I was definitely stuck in block. He could jump over without me turning and no button presses were working. We only got one round in because of Easter. I'm not sure if he did the hop back go forward kick, or just the forward one. I believe it was the special move though. They fight fast and when it happened we were a little stunned.
+
+UNABLE TO FIX :
+- Ex Ki Blast > Chou Kmh as P2 hits the wall causes debug flood
+
+
+TODO :
+- Warp Chou Kamehameha
+- Add new palettes, but need to invert them first ...
+
+
+FEEDBACK :
+? You need to add the overlay sprites for his eye pupils in his normal form for Genkidama (so that they are black/darker).
+? Sometimes when using Teleport during combos after three Ki Blasts, the counter message will pop up during the combo. I can't find an ironclad way to trigger it, though.
+
+- While using the ultimate Kamehameha against a character I found that if the beam doesn't make contact initially he just gets stuck in an infinite loop.
+- Le petit problème du P2StateNo/HitOverride est toujours là et affecte l'EX Ki Blast, le Boomerang Kick, le Focus Smash et les Teleport Attacks (entre autres, je suppose
+- If you have Vegeta's voice set to Japanese and you use Goku's Genkidama finisher on him then the voice he makes when he hits the ground is still English.
+
+SSJ Goku 100% combo : https://www.youtube.com/watch?v=exF3R_qppEQ&feature=youtu.be
+For SSJ Goku i think the most important thing is to limit his shoryuken to like 3 per emo combo. or 2 even. the 3rd would whiff or twist KO p2 so you cant juggle them anymore afterwardfs.
+
+- If that's the case, then the number of teleports that can be done during Justice Mode should be reduced.  Since a normal teleport costs 1000 power, and I get 10 teleports for 2000 power (in Justice Mode), it's more reason for me to exploit it.  As soon as I get 2 levels of meter, I can just turn on Justice Mode and go to town.  SSJ Goku builds meter at a decent rate, so even if I finish Justice Mode, it won't be hard to get 2 more meters and do it over again.
+
+- Giving SSJ Goku another optional teleport command in B, D, DB would give the teleport a bit more utility especially when trying to land Justice Mode combos. The D, D command wasn't coming out as fluidly as you'd think a command like that would. Part of that may have something to do with extenuating circumstances such as the character, the controller or even MUGEN itself. On top of that when I was attempting to cancel into a teleport is that I had a hard time buffering into the command for easier use (i.e LK, MK, HK, D+HK, D+MP+HP). I was able to finally figure out the timing but I still feel having B.D.DB as the command would be a better fit for the character and it wouldn't be a strange command to have linked to a teleport seeing as characters like Bison & Dhalsim have it and even Goku did as well in Hyper Dimension.
+- Whether to leave it as 2 button press or have it work more like Psylocke's in the versus series where each button determines where the teleport goes is a whole other story. That could be optional as well.
+- My only other suggestion is having the Super Kamehameha function a bit more like a Denjin Hadoken where moving the stick will make the move come out faster. It would become a greater tool for combo enders with more damage before they fall out of range or to have more functionality after your opponent has been knocked down to give them something to deal with on wakeup.
+

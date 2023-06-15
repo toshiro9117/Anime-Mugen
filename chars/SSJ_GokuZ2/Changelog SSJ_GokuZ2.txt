@@ -1,0 +1,284 @@
+JNP Taking over this bastard
+
+Oct/11/2017
+---------------------------------------------------------------------------------------------------------------------------
+-updated air/ground tech code
+
+Oct/10/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Tweaked many CLSN for basics
+
+Oct/3/2017
+---------------------------------------------------------------------------------------------------------------------------
+-fixed colors in new Chou KHH sprites thanks to Ethan
+-[HDBZ] Fixed hard knockdown bug
+-[HDBZ] Added throw tech
+-[HDBZ] removed poweradd from simply doing basics without hitting
+-[HDBZ] Fixed empty blocking using AttackDist
+-[HDBZ] Added Dash Collision fix
+-[HDBZ] Added tall char infinite fix
+-[HDBZ] Added juggle limiter LVL2
+-v2--fixed layering on blue flame for emo bar
+-v3--fixed throw
+
+
+Sept/29/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Sonic Rush and Super Sonic Rush no longer fly off screen facing the corner and holding forward
+-Sonic Rush and Super Sonic Rush now allow control after hit in a counter hit situation
+-teleport attacks no longer can make P2 get stuck flying if someone is in the way
+-adjusted several CLSN2 on basics
+-adjusted CLSN2 for crouch guard
+-reduced min dmg on sSP
+-cSK should not miss any crouching chars
+-Reduced dmg for Blast Fist during a teleport combo
+-removed Blast fist limit during teleports allowing loops once more
+-reduced hitstun on jLK
+-Changed triggers for VS Freeza intro
+-fixed layering issues on Emo bars
+-Made alternate version of Hyper Rush for Simul
+
+August/11/2017
+---------------------------------------------------------------------------------------------------------------------------
+=[HDBZ] Added jumping basics limiter system
+=fixed issue with armors and custom state 5000
+
+May/14/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Reduced dmg of Chou KHH a bit
+-Reduced the amount of times he can do teleport inside of combos to 2 while not in emo.
+-In emo he can now do 3 teleports in 1 combo and 2 teleport attacks.
+-Power given to emo bar adjusted for these new rules. Teleport attacks only give 50 super meter now instead of 100 when they connect.
+-No longer lose 1000 super meter when exiting emo with teleport
+-Combo Breakers no longer work for LVL 3 super And LVL1/2 Sonic Rush
+-fixed incorrect state bug with teleport
+-Added Chicken Block code
+-Can now throw with just LP+LK no directions needed
+-Fixed all attacks to work with super armor
+
+
+4.1 patch log
+- Fixed Ground Bounce State
+- Fixed State Type for Teleports
+- Fixed VS Vegeta Intro bug
+- Fixes teleport bugs
+- Allows teleport kamehameha with the new command
+- Can't use emo against Saibamen
+
+
+03/16/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Added ability to cancel after coming down from EX Uppercut
+
+-Made Teleport attacks actually useful. They give super meter if you connect and they build up your Justice bar MUCH faster. They do give P2 quite a bit of meter though. Especially if they block it.
+
+-Fixed an issue where losing 1000 meter by leaving Justice through teleport happened only once a round
+
+-reduced life to 900
+
+-Readjusted dmg on ALL super and finishers
+
+-made an alternative way to do teleports with QCB+attack
+
+
+03/13/2017
+---------------------------------------------------------------------------------------------------------------------------
+Teleports now cost 500 meter unless you teleport while P2 is blocking. Then it costs 1000 meter.
+
+If P2 is in a hitstate while you teleport your super meter will fill up half as fast till P2 recovers.
+
+While in Emo mode Teleport attacks do NOT cause the super meter reduction. Just the teleports that leave you ctrl
+
+When you exit emo mode due to any teleport you also lose 1000 super meter. These nerfs were added to prevent people from using emo mode to build meter super fast then go straight into emo mode again.
+
+Sonic Rush LVL1 and 2 deal more damage
+
+Removed height restriction from EX Dive Kick and added it to normal Dive Kick
+
+
+03/12/2017
+---------------------------------------------------------------------------------------------------------------------------
+I've tested their AI for a moment and he could do c.MP -> s.MK, he shouldn't be allowed to do that. Look out for similar combo problems.
+fixed
+
+Also, I don't know if I fixed the triggers for the AI regarding the teleport and the teleport attacks. Probably not, sometimes he does the same teleport attacks and he shouldn't do that. Also, from what I recall (but I might be wrong) he should do two teleport attacks in a combo.
+Increased the limiter to <3. Everything looks right for him to NOT do the same 2 in a row.
+
+The Justice mode aura sound effect should have a StopSND in State -2 when his StateNo is not 2745, I forgot to add it.
+fixed
+
+
+03/10/2017
+---------------------------------------------------------------------------------------------------------------------------
+Fixed a winpose mistake where if P2 was near the edge of the screen he'd sometimes never stop walking forward in the car hits Goku winpose.
+
+
+03/08/2017
+---------------------------------------------------------------------------------------------------------------------------
+Raw teleports that don't auto attack now have a 6 tick delay before you gain control unless the opponent is in a hit state.
+Ki blasts will knock down on the 6th ki blast onward in combos
+
+Forgot to make the recovery teleport work against Guarding opponents. Fixed
+
+Fixed an issue where jSK was only bouncing P2 every other hit.
+
+========================================
+Alex Sin fixing SSJ Goku Z2
+========================================
+
+
+Missing:
+- Vans's fix (do I need to add it?)
+- Cinematic Explod thingie for Piccolo.
+- Maybe the variables need to be changed/fixed (like var(59)? I don't really remember...).
+- Teleport stuff (Justice bar cost and buffer, stuff like that).
+
+
+---------------------------------------------------------------------------------------------------------------------------
+07/03/2017
+- Hitting ground/wall sounds bug fixed (adding channels 20,21,22).
+- Changed Enemy to Target and NumTarget instead of NumEnemy in certain cases, to remove debug flood.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+11/02/2017
+- Vs Freeza intro fixed.
+- Sounds 5,9 and 2400,20 changed.
+
+---------------------------------------------------------------------------------------------------------------------------
+26/01/2017
+- Damage dampener fixed.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+22/01/2017
+- New damage dampener added.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+21/01/2017
+- Fixed Air Chou Kame by adding a No Push helper and adding PlayerPush = 0 on all the charging states.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+15/01/2017
+- All varsets (var(7)) in all states that require it are now fixed (a.HP / a.HK bounce juggle limit).
+- Increased Justice power usage of teleport attacks (no combo) from 1/10 to 1/8.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+29/12/2016
+
+- Chou Kamehameha's damage has a different damage dampener (same thing I did for Gohan). No, it's not the new damage dampener that was suggested, I'm still using the old one.
+I set a variable that keeps count of the hits the Chou Kame does and the damage gets scaled because of it, separately from the other attacks.
+- Lvl 1 Kamehameha does 8 hits now.
+
+- Hyper Rush: Genkidama finisher fixed
+(aura sound effects missing; I used sound 8,5 instead of 8,0 since it's longer).
+
+- Hyper Rush: Angry Kamehameha finisher fixed
+(the Kamehameha wouldn't put the enemy in a custom state, so I restored the p2stateno and commented the TargetState).
+
+- Quick workaround for Piccolo's clones and Saibamen implemented (he will do a strong blast fist/shoryuken against them instead of the Shin Shoryuken).
+
+
+---------------------------------------------------------------------------------------------------------------------------
+18/12/2016
+
+- Damage dampener added but then removed. The damage values are all wacky if I apply it. They don't hurt as much as they should, so I removed it.
+- Justice buffer bar consumption added (for Teleport Kamehameha level 1) and slightly changed for the different teleports/zanzoken attacks.
+- Reduced damage value of the teleport attacks.
+- All the winquotes from Goku Z2 are now added into SSJ Goku Z2.
+- Managed to resolve some Justice bar (blue) graphical bugs.
+
+- Teleport -> Blast Fist (shoryuken) loop combo shortened by a lot.
+After a Blast Fist you can teleport twice if in Justice mode, once if not.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+1/12/2016
+
+- Dizzy stars moved 30 pixels upwards for Piccolo.
+- Put TargetState instead of p2stateno.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+29/11/2016
+
+- The aura effects will stop while in pause/superpause.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+24/11/2016
+
+- The AI will not go into Justice Mode while charging power.
+- Changed teleport attack combo chains to 2 (instead of 3). (Variable 15 in the .cmd)
+- You can't attack the enemy with the same Zanzoken attack during a combo.
+
+---------------------------------------------------------------------------------------------------------------------------
+20/11/2016
+
+- Sprite groups 221, 222 and 223 added to the .sff (colour separated)...   :P
+- Found an "intro skipping" sound problem for the boulder.
+However I've been able to fix the sound problem for the Kinton.
+- Z counter hitsounds adjusted for all versions (sound 5,2 for the punch attacks, 5,5 for the slide kick, 5,6 for all kick attacks).
+
+---------------------------------------------------------------------------------------------------------------------------
+19/11/2016
+
+- Added
+triggerall = !IsHelper
+to all explods 5938 and 20152.
+- Mouth closes for Justice mode activation. (added sprites 193, number 50,51,52,53,54,55)
+- Fixed sprite 610,2.
+- No intro sounds when skipping intro.
+- The cr.HK is some ticks slower than before. Adjusted codes for statetypesets, y positions, etc. .
+- P2StateNo converted to TargetState in all cns files.
+- Hitsparks converted from explods to sparkno and sparkxy.
+- Timer will be frozen during the hyper moves.
+
+---------------------------------------------------------------------------------------------------------------------------
+13/11/2016
+
+- Changed s.HP whiff sounds with medium ones.
+- Corrected the King Kai animation in the winpose "Car Crashing".
+- Added recovery time for the Focus attack.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+08/11/2016
+
+- Justice mode activation changed to D,D,y+b (D,D+MP+MK);
+- Super Background effect added for all supermoves that didn't have it);
+- re-added sounds 8,5 and 8,6 (they were 8,0 and 8,1); the Justice mode activation now uses those and it looks and sounds right;
+- added sound 2820,5, lowered volume of the aura charge sound during the finisher "Final Punch";
+- Goku Black palette (made by LightScarecrow, edited by AlexSin) added as 7th palette.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+06/11/2016
+
+- Authorname changed to "Team Z2";
+- added updated sprite 19897,0 (BG effect for supermoves);
+- fixed sprite 30205,0 (wrong colours);
+- added MY TOES! sprites and animation (group 5886); sprites colour separated by me;
+- added new fonts;
+- dash collision updated: new sound effect, no blue explods, no font;
+- Z counter animation timing changed;
+- converted pausetimes from WinMugen to Mugen 1.0;
+- the Super Kamehameha effects now play during pause/superpause;
+- added two ticks of no control in the landing state;
+- removed white Flash FX effects for Ki blasts and Kamehamehas;
+- applied the 'mouth closes after yell ends' frames in the power charge animation;
+- s.HP (barrage of fists) now is uncancellable until the last hit; more time recovery added on the last hit;
+
+- c.HK -> Air Kamehameha (lv1 and lvl2) combo link added;
+Note: it may make him a bit unbalanced, if timed right and with the right distance (in the corner) you can perform the same combo twice.
+
+- the AngleDraw state controllers in the Hyper Dash Rush attacks (Shin Shoryuken-like finisher) had commented ignorehitpauses, making the supermove look wrong; I don't know the reason. Uncommented, so that it looks right.

@@ -1,0 +1,175 @@
+;#####################################################################################################################
+;## PERSONALIZATION FILE FOR SSJ GOKU BY Team Z2
+;##
+;## DON'T modify the values if there isn't any comment explaining what to do just above. This could mess the char.  ##
+;## If you're not sure, make a copy of the file before changing any value.
+;##
+;#####################################################################################################################
+
+[Statedef 5900]
+type = S
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+value = 0
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+fvalue = 0
+
+
+
+; Throw Tech?
+[State 5900, 3]
+type = VarSet
+trigger1 = RoundState = 0
+v = 0
+;#####################################################################################################################
+;## Choose if and how you want throw teching
+;## 0 = none
+;## 1 = Using Dash Collision
+;## 2 = Normal
+;## Default value is 2
+value = 2
+
+
+; ENGLISH OR JAPANESE VOICE
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 55
+;#####################################################################################################################
+;## Choose which voice you want to use. Set the value to 0 to use the Japanese voice, set the value to 1 to use the 
+;## English voice.
+;## Default value is 1.
+value = 1
+
+
+
+
+;; AI LEVEL
+;[State 5900, 3]
+;type = VarSet
+;trigger1 = 1
+;v = 54
+;;#####################################################################################################################
+;;## Set the value to a number from 0 to 8 to set the AI level.
+;;## 0 = Weak Mode
+;;## 1 = Easy Mode
+;;## 2 = Normal Mode
+;;## 3 = A little tougher than Normal Mode
+;;## 4 = Tough Mode
+;;## 5 = Hard Mode
+;;## 6 = Harder Mode
+;;## 7 = Expert Mode
+;;## 8+ = Master Mode
+;;## Default value is 8.
+;value = 4
+
+
+
+
+; TRANSPARENT OR SOLID FX
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 2
+;#####################################################################################################################
+;## Choose how you want the effects to be slightly transparent, or if you want them to be completely solid, old school
+;## style. Set the value to 1 for transparent FX, and to 0 for solid FX.
+;## Default value is 0.
+value = 0
+
+
+; REPEL PROJECTILE FX
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 44
+;#####################################################################################################################
+;## Choose which repel projectile you want to use. Set the value to 0 if you want to use the new yellow/blue one. Set
+;## the value to 1 to use the old purple one.
+;## Default value is 0.
+value = 0
+
+
+; SUPER BACKGROUND CHOICE
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 13
+;#####################################################################################################################
+;## Choose which super background you want to use when Goku kills the opponent with a Super or Ultra move. Set the
+;## value to 0 to use the Street Fighter 3 Super BG, set the value to 1 to use the Jojo's Bizarre Adventure Super BG.
+;## Set the value to 2 to use the Super Dragon Ball Z Super BG. Set the value to any number greater than 2 to disable
+;## Super Background.
+;## Default value is 2.
+value = 2
+
+
+; TELEPORT COMMAND
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 48
+;#####################################################################################################################
+;## Choose which command you want to use for Teleport. Set the value to 0 for the normal version : D,D+2p/2k. Set the
+;## value to 1 for the easy version : direction+Start.
+;## Default value is 0.
+value = 0
+
+
+; CINEMATIC SSJ INTRO CUT-OUT
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 51
+;#####################################################################################################################
+;## Balthazar can't make up his mind. He sprited this awesome cut-out eye animation during the long SSJ transformation
+;## introduction, but then wanted it to be removed. Set the value to 1 to keep the cut-out animation, set it to 0 to
+;## disable it.
+;## Default value is 1.
+value = 1
+
+
+; JUSTICE GAUGE - X AXIS
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 45
+;#####################################################################################################################
+;## Set the value to move the Justice Gauge to a position that suits you (X Axis in this case). A positive value means
+;## forward (to the middle of the screen), a negative value means backward (to the border of the screen).
+;## Default value is 0.
+value = 0
+
+
+; JUSTICE GAUGE - Y AXIS
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 46
+;#####################################################################################################################
+;## Set the value to move the Justice Gauge to a position that suits you (Y Axis in this case). A positive value means
+;## upward, a negative value means downward.
+;## Default value is 0.
+value = 0
+
+
+
+
+
+
+;=================================================
+; DO NOT CHANGE ANYTHING BELOW THIS LINE !!!
+
+[State 5900, End]
+type = changestate
+trigger1 = !time
+value = ifelse(roundno = 1, 190, 0)
+
+
+
+

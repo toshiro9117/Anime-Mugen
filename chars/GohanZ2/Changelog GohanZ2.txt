@@ -1,0 +1,1156 @@
+JNP Taking over this bastard
+
+Feb/7/2018
+---------------------------------------------------------------------------------------------------------------------------
+-EX Soaring Dragon Kick has 2 time limiter
+-DMG on Dive Kick Flurry tweaked
+-can no longer hold back while doing a dash attack
+-can now hold down and fwd or back to do D+MP
+-F,FMK hit and block times altered and can no longer chain on hit
+
+Jan/11/2018
+---------------------------------------------------------------------------------------------------------------------------
+-increased throw startup from 2 F to 5
+-Limiter applied to EX dive kick bounces
+-various buffer fixes
+-OTG fix [HDBZ]
+
+Oct/19/2017
+---------------------------------------------------------------------------------------------------------------------------
+-fixed omni kick explod inputs
+
+Oct/11/2017
+---------------------------------------------------------------------------------------------------------------------------
+-updated air/ground tech code
+
+Oct/10/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Tweaked many CLSN for basics
+
+Oct/1/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Omni kicks add 1 point extra scale points
+-finalized last buffer tweaks for crouch and command basics
+
+September/29/2017
+---------------------------------------------------------------------------------------------------------------------------
+-fixed issue with KHH beams missing at close range
+
+September/28/2017
+---------------------------------------------------------------------------------------------------------------------------
+-limiter applied to EX Dive kick
+-fixed layering issue on emo bars
+-fixed throw tech -again
+
+September/20/2017
+---------------------------------------------------------------------------------------------------------------------------
+-removed juggle points from hurricane and dragon kicks
+-added limiter to dragon kicks
+-can no longer chain basics after dash MK is guarded
+-fixed button jam 
+
+August/15/2017
+---------------------------------------------------------------------------------------------------------------------------
+-[HDBZ] Fixed empty blocking using AttackDist
+
+August/13/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Fixed crouch get hit CLSN boxes
+-reduced dampener on Masenko
+-Can now hit chars after using all Omni Kicks
+-Can now dash cancel after Omni kicks connect
+--UP with Up Omni
+--Forward with UF/F/DF Omni
+--Down with down Omni + Emo
+-can dash down in emo while back dashing
+-[HDBZ] removed poweradd from simply doing basics without hitting
+-Emo remembers how many times you used a super between rounds
+-fixed issue with Hurricane Kick being LK version after Hurricane recovery
+-adjusted close MP and close MK
+-[HDBZ] Added Dash Collision fix
+-[HDBZ] Fixed hard knockdown bug
+-[HDBZ] Added juggle limiter LVL2
+-[HDBZ] Added throw tech
+-[HDBZ] Throws get 180 power and give 35 as part of new standard
+-added ground bounce sounds to Masenko that hits aerial opponents
+
+August/11/2017
+---------------------------------------------------------------------------------------------------------------------------
+=adjusted CLSN boxes for taunt
+=[HDBZ] Added jumping basics limiter system
+=fixed issue with armors and custom state 5000
+=fixed issues with dragon kick
+=[HDBZ] added EXPLODsive Buffering
+
+May/31/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Many basics now deal reduced damage
+-Only 1 bounce allowed in combo
+-LVL1 Masenko can become unblockable (this was actually a goof last build)
+-LVL2 Masenko no longer unblockable right away but becomes unblockable faster than LVL1 and dizzies longer and faster than LVL1
+-Gains Majin build airdash abilities back in emo
+-Ranbuu no longer can be Combo broken 
+-reduced damage on supers that use emo bar
+-Added Chicken Block code
+-Can now throw with just LP+LK no directions needed
+-Fixed all attacks to work with super armor
+
+4.1 Patch Log
+- Fixed Ground Bounce State
+- Fixed links after disabling the emo mode against Saibamen
+- Fixed Intro bug for vehicle intro
+
+
+03/15/2017
+---------------------------------------------------------------------------------------------------------------------------
+fixed f,f+MK attack's hitpause displaying the blurred kick frame on hitpause
+
+Added 3 frames of recovery to sLP it was +6.
+
+
+03/15/2017
+---------------------------------------------------------------------------------------------------------------------------
+-Nerfed dmg of Ranbu LVL3s
+
+-Returned Dizzy attributes of Masenko back to what they were, near instant BUT now it won't dizzy if the opponent is in a hit state when he begins the move
+
+-Buffed ChouMasenko dmg
+
+
+03/13/2017
+---------------------------------------------------------------------------------------------------------------------------
+Corrected his palettes/small port and made it so he can do up to 3 LVL1 or LVL2 supers in emo mode before he leaves it. Seemed odd that LVL2 added more and needed twice as much emo meter to fire.
+
+
+====================================
+Alex Sin fixing Gohan Z2
+====================================
+
+
+Missing:
+- Vans's fix (do I need to add it?)
+- Cinematic Explod thingie for Piccolo.
+
+
+07/03/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- Changed Enemy to Target and NumTarget instead of NumEnemy in certain cases, to remove debug flood.
+- Added new portrait for Alternate Gohan's .sff.
+
+
+
+
+
+03/03/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- Hitting ground/wall sounds bug fixed (adding channels 20,21,22).
+
+
+
+21/02/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- Removed limitation for Hurricane Kick -> Super Hurricane Kick link.
+
+
+
+
+
+18/02/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- The Masenkos travel faster than before.
+- Increased their stun time and damage slightly.
+- s.LP -> Lvl1 Masenko combo possible (with good timing).
+- Lvl 2 Masenkos are unblockable.
+- Added chains for the landing state of EX Diving Kick Flurry: Lvl 2 Masenko, Lvl 2 Soaring Dragon Strike.
+- Made s.HK x 2 -2 on block, I think it's fairer than before now.
+- EX Hurricane Kick auras removed. ;\
+
+
+
+16/02/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- Removed combo: a.LP -> Hurricane Kick.
+- Added double bounce per combo.
+- LK Hurricane Kick can be cancelled into Soaring Dragon Kick.
+- Removed auras from the Hurricane / Soaring Dragon Kicks (EX).
+- EX moves won't consume destiny power but fill the bar. When in Destiny mode they will use 1/4 of a power bar.
+- EX Diving Kick Flurry causes bounce with the last kick.
+
+
+21/01/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- New damage dampener added and fixed. It will obviously need some more tinkering with values and such but for now it can work. :)
+
+
+
+15/01/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- All varsets (var(7)) in all states that require it are now fixed (a.HP / a.HK bounce juggle limit);
+- Fixed Air Chou Kame by adding a No Push helper and PlayerPush (value = 0).
+
+
+
+05/01/2017
+---------------------------------------------------------------------------------------------------------------------------
+
+- Added some delay ticks to the ki blast shooting animations.
+
+
+
+04/01/2017
+---------------------------------------------------------------------------------------------------------------------------
+-
+All normal  attacks have the attribute N (normal) in their hitdefs.
+All special attacks have the attribute S (super)  in their hitdefs.
+All super   attacks have the attribute H (hyper)  in their hitdefs.
+Same for all the helpers.
+
+- Fixed intros: Bicycle and Car Crash:
+while landing Gohan usually ended up move a bit to the left or to the right depending on the stage you were on; to fix this I made Gohan invisible for 1 tick, set the fvar(29) as the original Pos x, then added 1 tick to the other state controllers to make the intro/s work.
+
+JNP, thanks for the tip!
+The fixes were added into state 19200 (system.cns) and state 52 (override.cns).
+
+- TargetBind for Diving Kick Flurry added/fixed.
+
+
+
+5/12/2016
+---------------------------------------------------------------------------------------------------------------------------
+- Reduced pausetimes for the Hurricane Kicks and the Soaring Dragon Kicks. You'll see when you perform the medium and strong versions. ;)
+- Air Dash Down can now only be done while super jumping.
+- No easy commands! Gohan doesn't need them, they're already too easy to do. No complaining! :P
+Justice Mode can be activated with D,D,y+b (medium punch and medium kick).
+The command for Gekiretsu Ranbu is QCB,F,any kick.
+
+You can agree with me he doesn't need them.
+
+
+
+1/12/2016
+---------------------------------------------------------------------------------------------------------------------------
+- Dizzy stars moved 30 pixels upwards for Piccolo.
+- Added more recovery time to F,F+MK on block to make it more punishable.
+- Add 3 ticks of start-up time to the F,F+MK attack.
+
+
+
+28/11/2016
+---------------------------------------------------------------------------------------------------------------------------
+Added
+triggerall = !IsHelper
+to explods 5938 (flip ko effect) and 20152 (twist ko effect).
+
+
+31/10/2016
+---------------------------------------------------------------------------------------------------------------------------
+The power charge action now uses the mouth explods.
+
+
+25/10/2016
+---------------------------------------------------------------------------------------------------------------------------
+Pausemovetime and supermovetime for Chou Kamehameha uncommented.
+Made the light and medium versions of Hurricane Kick quicker and invincible at the start up.
+Modified gravity of the Hurricane Kicks (EX version included) to show the entire animation of the attack.
+Added quick fix for Saibamen for the Twist and Flip explods (respectively 20152 and 5938).
+Added image 19897,0 from Piccolo Z2 (image update).
+
+
+
+
+17/10/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+New fonts added.
+Targetstate instead of p2stateno when possible: I tried to do that for the EX Hurricane Kick, even making two states for it but it doesn't work like it does with the p2stateno, so I left those there.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+14/10/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Winpose problem (after Gekiretsu Ranbu) fixed (it was an oversight of mine).
+Dash Collision effects removed/commented. Dash Collision new sound added (950,1).
+Slash Chop yellow effects removed.
+Hitsparks fixed.
+Piccolo clones problem fixed.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+13/10/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Z Counter hitsounds changed.
+Added Masenko vanishing sprite effects.
+Removed PalFX for Diagonal Lines during supermoves (why was it there?).
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+11/10/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Sound 15000,2 added.
+Facebook winpose fix (thanks to JNP/JustNoPoint).
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+01/10/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Bug reported by Balthazar concerning the Masenko helpers not "exploding" when hitting Super Buu's supermove.
+It is now fixed together with little other bugs, like AngleDraw and HitOverride codes.
+
+Changes were made in the .air and helpers.cns files.
+
+
+Note: I forgot to mention this, but Gohan doesn't use the new damage dampener by PotS; it uses the old one, adapted and customized for his supermoves.
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+25/09/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Still working on the AI as you've noticed and I think I've gotten at a good point, so here's the update.
+- The AI won't guard as much as before.
+- He will shoot the Masenko randomly (I hope).
+
+Also some cosmetic changes and adds:
+- white screen fade out when doing the Finisher 3;
+- sound and graphical fix for some other ground bounce states I overlooked.
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+18/09/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+#1
+
+Changed var(59) with AILevel.
+
+Now the AI should be less aggressive than before.
+However it blocks a lot of attacks and I'm trying to figure out how to decrease the cances of it happening without making the AI dumb.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+23/08/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+#1 helpers.cns, States 2011, 2021, 2031, 2041
+
+Added ignorehitpause = 1 to all Masenko limiters in the helpers states [ParentVarSet, var(28)].
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#2 supers.cns, States 2100, 2200
+
+A little oversight has been fixed, regarding the amount of supermoves and Ex moves you can do in Destiny mode.
+Ah, the Emotion mode is called Destiny mode for Gohan.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 supers.cns, States 2700, 2720
+
+Gekiretsu Ranbu start-up adjusted: now the damage dampener will work as intended.
+The reason it couldn't was because a ReversalDef was used: the P2StateNo parameter doesn't allow variables to work properly.
+
+So my way of fixing was to:
+- comment the ReversalDef
+- add a TargetBind on the first attack of the move. If the attacks don't hit Gohan will go to State 0.
+
+---------------------------------------------------------------------------------------------------------------------------
+#4
+Added the alternate costume for Gohan (courtesy of Chamat and Ethan The Human).
+Also added are the credits in the Thanks section in the Readme. Yes, even though I know very very little about real coding I haven't messed up the ReadMe, so don't worry about that.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#5 supers.cns, helpers.cns
+
+Reduced damage scaling on Super Hurricane, Chou Kamehameha, Soaring Dragon Strike/Unleashed from combos.
+I used var(39) for this.
+
+Thanks to Veanko's characters for reminding me about some codes I kept forgetting.
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+10/08/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+#1 helpers.cns, States 908, 909
+
+Dust effect is now bound to the player.
+
+---------------------------------------------------------------------------------------------------------------------------
+#2 supers.cns, States 2340, 2350
+
+No voice when shooting. (no "haaaa!" voice)
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 supers.cns, States 2500
+
+Volume of the Kicks sound effects increased.
+
+---------------------------------------------------------------------------------------------------------------------------
+#4
+system.cns, States 751,752
+gohan.air, anim 752
+(Zero Counter)
+
+Added width state controller.
+Added CLSNs for the Kick counter.
+
+---------------------------------------------------------------------------------------------------------------------------
+#5
+gohan.air, anim 2012
+helpers.cns, states 2031, 2041
+supers.cns, state 2040
+
+Slightly bigger CLSNs for normal Masenko lvl 2 helper.
+Velocity reduced, to allow max number of hits against tall/big opponents (like Super Buu, Piccolo).
+Helper start position (only straight version) changed.
+Masenko lvl 2 fast like Masenko lvl 1.
+
+Comboability with ki blasts fixed.
+
+---------------------------------------------------------------------------------------------------------------------------
+#6
+state-2-3.cns, states 190 -> 730
+
+Voices and sound effects won't keep on playing after the intro is skipped.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#7
+override.cns, state 5150
+
+Fixed Facebook winpose portraits yet again.
+ChangeAnim2 was correct, disregard anything I said about adding codes to your character.
+
+The 9000,2 portraits are shown for every character that has "Team Z2" as author name; in case you have something different, 9000,1 appears. This is made so every character is compatible with this pose.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#6
+specials.cns
+
+EX moves consume Unleashed power instead of aura when in Unleashed mode.
+
+---------------------------------------------------------------------------------------------------------------------------
+#7
+supers.cns, state 2500
+gohan.air, anim 2501
+
+Removed vacuum effect.
+CLSN1 (red collisions) on anim 2501 are now larger.
+The hurricane effects have been also resized.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#8
+state-2-3.cns
+system. cns, states 1115100, 1115110
+normals.cns, state 652
+specials.cns, state 1557
+
+Removed gamemakeanim sctrls in states 1115100 and 1115110.
+Removed wrong PlaySNDs in states 1115100, 1115110, 652 and 1557.
+Added new PlaySNDs in state -2-3.cns (sound used: 15000,1)
+
+---------------------------------------------------------------------------------------------------------------------------
+#9
+supers.cns
+
+All supermoves will consume the corresponding amount of Unleashed power when in Unleashed mode.
+Also, you can only do three supermoves in Unleashed mode, after that you'll exit the mode.
+
+Lvl 1 Chou Masenko:		1 block of UB (Unleashed bar)
+Lvl 2 Chou Masenko:		2 blocks of UB
+Soaring Dragon Strike:		1 block of UB
+Soaring Dragon Unleashed:	2 blocks of UB
+Chou Kamehameha:		2 blocks of UB.
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+27/07/2016
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#1 supers.cns, State 2500
+
+- Changed kick movement sounds to 21,2.
+- Damage also reduced (from 198 to 160).
+- A cosmetic change has been applied to the Dust explod effect, if Gohan is higher than 60 pixels of height the dust doesn't appear.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#2 state-2-3.cns, gohan.air, gohan.sff
+
+Added P2 Hit Wall explods.
+Codes (cns)
+[State -2, P2 Hit Wall Spark (front)]
+type		= Explod
+triggerall	= NumEnemy
+trigger1		= Enemy, StateNo = 1557
+trigger1		= !NumExplod(8402)
+ID		= 8402
+anim		= 8402
+pos		= -20, -50
+postype		= p2
+velocity		= 0, 0
+accel		= 0, 0
+removetime	=-2
+sprpriority	= 3
+ignorehitpause	= 1
+persistent	= 0
+facing		=-1
+[State -2, P2 Hit Wall Spark (back)]
+type		= Explod
+triggerall	= NumEnemy
+trigger1		= Enemy, StateNo = 1557
+trigger1		= !NumExplod(8403)
+ID		= 8403
+anim		= 8403
+pos		= -20, -50
+postype		= p2
+velocity		= 0, 0
+accel		= 0, 0
+removetime	=-2
+sprpriority	=-3
+ignorehitpause	= 1
+persistent	= 0
+facing		=-1
+
+
+
+Codes (air)
+; Hit Wall Spark (front)
+[Begin Action 8402]
+8401,2, 0,0, 2, 
+8401,4, 0,0, 2, 
+8401,6, 0,0, 2, 
+8401,8, 0,0, 2, 
+
+;Hit Wall Spark (back)
+[Begin Action 8403]
+8401,0, 0,0, 2, 
+8401,1, 0,0, 2, 
+8401,3, 0,0, 2, 
+8401,5, 0,0, 2,
+
+
+
+Sprite group (sff)
+8401
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 helpers.cns
+
+Adjusted Vacuum effect helper (state 2503): it will only work on enemies who aren't on ground.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#4 gohan.sff, supers.cns, helpers.cns
+
+Added group 2806 (LR electric charges) and coded in states 2800 (explod, supers.cns), 2810 (helper call, supers.cns), 2805 (helper, helpers.cns).
+
+---------------------------------------------------------------------------------------------------------------------------
+#5 specials.cns
+
+All specials (excluding ki blast shooting) give unleashed power whenever the Destiny mode is activated.
+
+---------------------------------------------------------------------------------------------------------------------------
+#6 normals.cns
+
+Added enemy recovery delay after launcher.
+I added this to the launcher's hitdef:
+fall.recovertime = 58
+
+---------------------------------------------------------------------------------------------------------------------------
+#7 normals.cns
+
+Jump strong punch does not knock down anymore.
+
+---------------------------------------------------------------------------------------------------------------------------
+#8 system.cns
+
+Dash collision fixed yet again (state 950)
+What was missing was this:
+[State 950, ChangeState - ABORT]
+type		= Changestate
+trigger1		= P2StateNo != 950 && P2StateNo != 951 && Time>=4 && Time<50
+value		= 952
+ctrl		= 1
+
+Piece of code copied from GotenksZ2.
+---------------------------------------------------------------------------------------------------------------------------
+#9 supers.cns
+
+Coded new Masenko codes.
+
+Lvl 2 Masenko
+States:
+from 2030 to 2050 (supers.cns)
+from 2031 to 2042 (helpers.cns)
+
+Number of hits: 12
+Masenko helper slightly bigger (animation and CLSNs).
+Now the Masenko helpers will keep the hit count when/after it hits.
+
+As explained in an earlier update, 
+if you throw a helper which hits and then you attack the enemy, if the helper goes away before you hit (even if it would be a combo) the hit count goes to 0.
+
+So, in order to keep the combo count, you have to keep the helper in play.
+
+
+Taken from the Lvl 1 Masenko state (it's the same for the other version, with minimum changes)
+
+[State 2011, End]
+type		= ChangeState
+trigger1		= pos x!=[-240,240]
+value		= 2012
+
+[State 2011, End]
+type		= DestroySelf
+triggerall	= !MoveContact
+trigger1		= pos x!=[-240,240]
+
+if the Masenko doesn't hit, it just flies away and destroy itself;
+if the Masenko does    hit, the helper changes to its explosion/vanish state;
+
+in the explosion/vanish state:
+
+[State 2012, End];this allows for the combo counter to not be reset.
+type		= DestroySelf
+trigger1		= Enemy, MoveType != H
+
+the helper remains until the enemy changes from a/the get hit "move" to another "move".
+H means Hit, in other words it defines a get hit type of "move". All get hits, custom states are included.
+!= is our "disequal" symbol.
+
+So you read it like this:
+if the enemy isn't in any get hit state, the helper disappears. And the combo counter gets reset.
+
+In addition I coded another destroyself:
+[State 2012, End]
+type		= DestroySelf
+trigger1		= Root, winKO
+
+so the helper goes away, when the match is won.
+
+
+Chou Masenko (spark) coded.
+Lvl 1
+States:
+from 2330 to 2350 (supers.cns)
+states 2341, 2351 (helpers.cns)
+
+Number of hits: 13
+Smaller, both in CLSNs and effects.
+
+
+The Chou Masenkos can be used when in Unleashed mode; when it's not activated, you can use the chargeable Masenkos.
+
+
+Other problems related to these are also fixed, like the Super Background helper calling. (state-2-3.cns)
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+14/07/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+#1 quick fixes
+- Cropped all sprites.
+- Changed author name to "Team Z2".
+- Changed life to 900.
+- The Hurricane Kicks and the Soaring Dragon Kicks all use hitsound 5,5 (strong kick attack).
+- Fixed Facebook winpose.
+Note: all Z2 characters need to have these codes in state 5150 (usually in the override.cns):
+
+[State 5150, Facebook winpose ChangeAnim]
+type		= ChangeAnim
+trigger1		= NumEnemy
+trigger1		= Enemy, StateNo=181 && Enemy, Time = 411 && Enemy, Name = "Gohan Z2" && Enemy, AuthorName = "Team Z2"
+trigger1		= Enemy,var(34) = 1
+value		= 18105
+
+
+[State 5150, Screen doesn't follow the player]
+type		= ScreenBound
+trigger1		= Enemy, StateNo=181 && Enemy, Name = "Gohan Z2" && Enemy, AuthorName = "Team Z2"
+movecamera	= 0,0
+value		= 0
+ignorehitpause	= 1
+
+[State 5150, 'Portrait' sprite priority]
+type		= SprPriority
+trigger1		= Anim = 18105
+value		= 10
+[State 5150, 'Portrait' scale]
+type		= AngleDraw
+trigger1		= Anim = 18105
+scale		= 0.25,0.25
+[State 5150, 'Portrait' position]
+type		= PosSet
+trigger1		= Anim = 18105
+X		= IfElse(Facing=-1,-49,-79)
+Y		= -ScreenPos Y + 102
+persistent	= 0
+
+[State 5150, Facebook winpose SelfState]
+type		= SelfState
+trigger1		= NumEnemy && PrevStateNo != 5150
+trigger1		= Enemy, StateNo = 181 && Enemy, AnimElemTime(6)>500 && Enemy, Name = "Gohan Z2" && Enemy, AuthorName = "Team Z2"
+value		= 5150
+
+and in the .air file:
+
+; Gohan Facebook winpose - portrait
+[Begin Action 18105]
+9000,2, 0,0, 10
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#2
+Character updated from 04,11,2002 to 1.0.
+
+All pause times are fixed, in all constants files.
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 system.cns
+Dash collision fixed (HDBZ engine updates/tweaks).
+
+---------------------------------------------------------------------------------------------------------------------------
+#4 helpers.cns
+Fixed the AngleDraw sctrl on "Masenko helper up" (state 2021). If it hits it shall remain fixed at the same angle, ignoring the hit pause.
+
+---------------------------------------------------------------------------------------------------------------------------
+#5 state-2-3.cns
+No juggle checking after getting dizzied, allowing more combo possibilities.
+
+If you have to code a super which stuns the opponent, remember to add this in state-2-3.cns:
+
+
+[State -2, Variable 35 set for free juggles]
+type		= VarSet
+triggerall	= NumEnemy
+trigger1		= Enemy, StateNo = 5300
+var(35)		= 60
+
+[State -2, Variable 35, subtracting 1 when enemy not in dizzy state]
+type		= VarAdd
+triggerall	= NumEnemy
+trigger1		= (Enemy, StateNo != 5300) && (var(35) > 0)
+var(35)		= -1
+
+[State -2, Free juggle when opponent is dizzy]
+type		= AssertSpecial
+trigger1		= var(35) > 0
+flag		= NoJuggleCheck
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#6 supers.cns
+
+Super Hurricane Kick (state 2500)
+- Added more sound effects; changed strong kick sounds with medium kick sounds;
+- the hits are quicker (edited pausetime of the hitdefs);
+- added Vacuum effect for the super move (codes taken from PotS Ryu and adapted for this character).
+
+---------------------------------------------------------------------------------------------------------------------------
+#7 gohan.air
+
+I think the combo hitcount reset problem with the Masenko is now fixed. I edited anim 2512 to have 12 more ticks.
+
+It's basically a helper problem:
+if you throw a helper which hits and then you attack the enemy, if the helper goes away before you hit (even if it would be a combo) the hit count goes to 0.
+I read about this somewhere in MFG and it's actually true for some cases.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+8/07/2016
+---------------------------------------------------------------------------------------------------------------------------
+#1 gohan.sff
+Re-added sprite group 907 (yellow aura sprites) so they're not shared with group 905 (blue aura sprites).
+
+Bonus: this also fixes the aura problem in the Unleashed mode charge.
+The aura is supposed to be yellow during the Unleashed mode.
+
+---------------------------------------------------------------------------------------------------------------------------
+#2 .def file
+Reverted mugenversion from 1.0 back to WinMugen
+mugenversion = 04,11,2002
+
+Bonus: this adjusts the Chou Kamehameha, the Hurricane Kick super and the Soaring Dragon Strike problem... for some unknown reason.
+
+Update:
+The reason is explained here: http://mugenguild.com/forum/topics/how-convert-character-winmugen-mugen-1-0-121201.0.html
+(pause times in hitdefs)
+
+The next update will have this and other stuff fixed.
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 normals.cns (states 620, 650)
+Swapped damage of aerial strong punch and strong kick.
+
+---------------------------------------------------------------------------------------------------------------------------
+#4 .snd file
+Updated sound files in regards to the HDBZ engine updates/tweaks topic.
+
+---------------------------------------------------------------------------------------------------------------------------
+#5 specials.cns (state 1200)
+Added poweradd for the Diving Flurry Kick (he gains power when performing it, even if he doesn't hit).
+
+---------------------------------------------------------------------------------------------------------------------------
+#6 specials.cns (state 1250)
+EX Diving Flurry Kick will not give power back.
+
+---------------------------------------------------------------------------------------------------------------------------
+#7 normals.cns (state 270), specials.cns
+Wing Kick (s.SKx2) hitsound changed from 2604,0 (strong special attack) to 5,6 (strong hit sound) instead of 5,5 (like Balthazar requested) because I think it fits more. I can always change it to 5,5, but then what about the envshake?
+
+Diving Flurry Kick last hit sound changed from 2604,0 (strong special attack) to 5,5 (strong normal kick attack).
+EX Diving Flurry Kick last hit sound changed from 2604,0 (strong special attack) to 5,6 (strong hit sound). If needed I can change it to 5,5 (strong normal kick attack).
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#8 supers.cns (state 2800), system.cns (state 900), helpers.cns
+Emotion system edited so the effects (dust, lightning) don't move when in superpause.
+
+How did I do that? By coding the dust and lightning effects as helpers. (states 908, 909, 2805)
+
+---------------------------------------------------------------------------------------------------------------------------
+#9 specials.cns (state 1100)
+
+Soaring Dragon Kick second attack (medium version) knocks up the opponent higher to allow another Soaring Dragon Kick.
+To do that I added two hitdefs and the air.velocities of the second one changes if var(5)=1 (medium version). 
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/07/2016
+
+Problems I noticed:
+(these weren't present in the Majin build)
+- the standing Chou Kamehameha does 30 hits and doesn't knock the opponent down.
+- The Soaring Dragon supermoves don't work like in the Majin build. I thought it was a snap or a targetbind problem but I can't find those codes. There's more, the codes look the exact same as the ones he has in the Majin build!
+
+---------------------------------------------------------------------------------------------------------------------------
+#1 gohan.sff
+Edited image 18100,0 to not have the name and pictures, so that the text "Gohan wins" at the end of the match fits.
+(I've discussed this with Balthazar)
+So that fixes the "Gohan wins" problem.
+
+Note: I left the original image in the .sff, numbered 18100,1. If you don't want it you can delete it.
+
+---------------------------------------------------------------------------------------------------------------------------
+#2 system.cns, override.cns, state 181
+
+Increasing the time length of the Facebook winpose and the enemy portrait that gets displayed.
+Portrait used= 9000,2
+
+Bonus:
+fixed ChangeAnim2 bug.
+Debug message, if used, would be: "Used ANIM2 outside of custom state", so I changed it to just ChangeAnim.
+It might be wrong coding-wise, but it's a winpose and I guess people won't be bothered by that.
+
+Note: this wasn't tested against the other Z2 characters.
+
+---------------------------------------------------------------------------------------------------------------------------
+#3 constants.cns
+Fixed head.pos and mid.pos.
+
+---------------------------------------------------------------------------------------------------------------------------
+#4 supers.cns, system.cns
+Mouth overlay sprites bugs during aura charge and enemy superpauses fixed.
+ownpal = 0
+supermovetime = 99999
+pausemovetime = 99999
+
+---------------------------------------------------------------------------------------------------------------------------
+#5 gohan.sff
+Small portrait replaced.
+
+---------------------------------------------------------------------------------------------------------------------------
+#6 supers.cns, state 2115
+For some reason the Soaring Dragon Strike (lvl 1) could send the enemy flying very high.
+The problem was
+ground.velocity=-1.5,-80
+I just deleted the 0.
+
+---------------------------------------------------------------------------------------------------------------------------
+#7 supers.cns, state 2215
+Soaring Dragon Unleashed (lvl 2)
+
+First hitdef:
+damage = 19,2
+ground.velocity=-1.5,-20
+air.velocity=-1.5,-10
+
+changed to
+
+damage = 22,2
+ground.velocity=-1.5,-2
+air.velocity=-1.5,-4
+
+Second hitdef:
+damage = 22,4
+
+changed to
+
+damage = 27,4
+
+Note: its damage is still very little though.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#8 gohan.air, anims 2010, 2020
+
+I changed the timings of the two animations (from 21 ticks to 33 ticks).
+
+; Masenko Launch
+[Begin Action 2010]
+Clsn2Default: 3
+  Clsn2[0] = -1, -85, 21, -67
+  Clsn2[1] = -30, -72, 31, -39
+  Clsn2[2] = -37, -42, 37, 1
+2010,0, 0,0, 3, 
+2010,1, 0,0, 4, 
+2010,2, 0,0, 4, 
+2010,3, 0,0, 10
+
+changed to
+
+; Masenko Launch
+[Begin Action 2010]
+Clsn2Default: 3
+  Clsn2[0] = -1, -85, 21, -67
+  Clsn2[1] = -30, -72, 31, -39
+  Clsn2[2] = -37, -42, 37, 1
+2010,0, 0,0, 4
+2310,0, 0,0, 5
+2310,1, 0,0, 5
+2010,1, 0,0, 5
+2010,2, 0,0, 4
+2010,3, 0,0, 10
+
+
+
+
+; Masenko Launch Up
+[Begin Action 2020]
+Clsn2Default: 3
+  Clsn2[0] = -1, -85, 21, -67
+  Clsn2[1] = -30, -72, 31, -39
+  Clsn2[2] = -37, -42, 37, 1
+2020,0, 0,0, 3, 
+2020,1, 0,0, 4, 
+2020,2, 0,0, 4, 
+2020,3, 0,0, 4, 
+2020,0, 0,0, 3, 
+2010,3, 0,0, 3
+
+changed to
+
+; Masenko Launch Up
+[Begin Action 2020]
+Clsn2Default: 3
+  Clsn2[0] = -1, -85, 21, -67
+  Clsn2[1] = -30, -72, 31, -39
+  Clsn2[2] = -37, -42, 37, 1
+2020,0, 0,0, 4
+2020,1, 0,0, 5
+2020,2, 0,0, 5
+2020,3, 0,0, 5
+2020,0, 0,0, 4
+2010,3, 0,0, 10
+
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+30/06/2016
+
+---------------------------------------------------------------------------------------------------------------------------
+#1
+Helpers.cns
+States 1010 (light), 1011 (medium), 1012 (strong), 1060 (Ex 1), 1061 (Ex 2), HitDef
+
+Ki blasts (light, medium):
+from
+
+ground.velocity = -7.8,0
+guard.velocity = -7.5
+air.velocity = -5.8,-3
+airguard.velocity = -5, -4
+
+to
+
+ground.velocity = -4.8,0
+guard.velocity = -4.5
+air.velocity = -3,-3
+airguard.velocity = -2.9, -4
+
+
+
+Ki blasts (strong, ex):
+from
+
+ground.velocity = -7.5,0
+guard.velocity = -7.8
+air.velocity = -5.8,-4.4
+airguard.velocity = -5, -4
+
+to
+
+ground.velocity = -4.8,0
+guard.velocity = -4.5
+air.velocity = -3,-3.5
+airguard.velocity = -2.9, -3.2
+
+
+Pushback problem solved.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+#2
+Supers.cns
+States 2770, 2773
+
+Adjusted Gekiretsu Ranbu finishers changestates.
+
+Level 0  = Strong Punch
+1st level= Mega Masenko
+2nd level= Hi-Ex Blast Fist (fixed velset => he flies to the enemy's height, like intended)
+3rd level= Brothers Kamehameha
+
+---------------------------------------------------------------------------------------------------------------------------
+#3
+Supers.cns
+State 2773, HitDef
+
+The a.SP that leads to the Gekiretsu Ranbu finishers won't kill the enemy if the right conditions are met.

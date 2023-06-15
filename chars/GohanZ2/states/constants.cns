@@ -1,0 +1,224 @@
+;=============================================
+;Vars
+;=============================================
+;0: Throw Tech (config)
+;1: GOHAN Juggle Limit LVL2
+;2: 
+;3: 
+;4: Jump variable (from normal or super jump) - Ki Blast Charge Variable
+;5: Allows player to use directions to change Pal (config)
+;6:  System var. (OTG Juggling)
+;7: System var. (for juggle limits)
+;8: KO Voice choice
+;9: Specific Move Variables
+;10: Air dash limiter
+;11: opponent check (goku, vegeta)
+;12: Used to prevent special moves from dealing special gethits twice.
+;13: Super BG choice (config)
+;14: Gethit gut or not (Ki Blast, Machine Gun Temper)(in helpers) - Used to detect if a projectile hit.
+;15: Specific Move Variable 2
+;16: Specific Move (goes to zero on enemy, movetype != H)
+;17: Zero Counter command
+;18: Juggle Safety
+;19: 
+;20: varset for 1st/2nd state of Focus Attack
+;21: Count Hits
+;22: Super jump var
+;23: Focus Attack animelem set
+;24: Focus Attack repel
+;25: 
+;26: Fire Trap Shot?
+;27: First attack notification
+;28: 
+;29: GOHAN OPEN!
+;30: Dash Collision count - Beam Collision count
+;31: 
+;32: 
+;33: 
+;34: 
+;35: 
+;36: 36
+;37: Activate Destroy Hellzone Anim
+;38: throw check
+;39: Toggle Debug Clone (config)
+;40: Launch Hellzone Grenade
+;41: Strength var for special moves.
+;42: Create Balls for Hellzone?
+;43: Choose Clone teleport out sensitivity
+;44: Repel Projectile choice (config)
+;45: X axis Rage Gauge (config)
+;46: Y axis Rage Gauge (config)
+;47: flip knockout bounce
+;48: -2 Custom State Checker
+;49: -3 Custom State Checker
+;50: Animate blur through hitpause
+;51: 
+;52: 
+;53: 
+;54: Clones Helper Type
+;55: VOICE (Jap/Eng) variable
+;56: counter system notification
+;57: counter system notification
+;58: Pal Color used with Var 5
+;59:  AI
+
+
+;fvar(1)  : Cheap KO
+;fvar(2)  : Damage Detection variable
+;fvar(3)  : Specific Move Variabls (Velocities and such)
+;fvar(8)  : Counter Hit
+;fvar(9)  : Focus Attack Strength
+;fvar(10) : Damage Dampener
+;fvar(11) : Root Dampener
+;fvar(13) : Hit Count Reset
+;fvar(27) = destiny mode
+;fvar(28) = actual destiny bar
+;fvar(29) : Gohan x axis for intros
+;fvar(30) : Gohan P2 in hit state for Masenko?
+;fvar(31) : Gohan Number of times supers are used in emo
+;=============================================
+; CNS File for Gohan Z2 by Team Z2
+; Constants file
+;=============================================
+
+[Data]
+life		= 900
+power		= 3000
+attack		= 100
+defence		= 105
+fall.defence_up	= 50
+liedown.time	= 15
+airjuggle		= 15
+sparkno		= 2	
+guard.sparkno	= -1
+KO.echo		= 0	
+;volumescale	= 150
+IntPersistIndex	= 50
+FloatPersistIndex	= 20
+
+;--	--	--	--	--	--	--
+
+[Size]
+xscale		= 1		;Horizontal scaling factor.
+yscale		= 1		;Vertical scaling factor.
+ground.back	= 30		;Player width (back, ground)
+ground.front	= 25		;Player width (front, ground)
+air.back		= 12		;Player width (back, air)
+air.front		= 12		;Player width (front, air)
+height		= 60		;Height of player (for opponent to jump over)
+attack.dist	= 160		;Default attack distance
+proj.attack.dist	= 90		;Default attack distance for projectiles
+proj.doscale	= 0		;Set to 1 to scale projectiles too   
+head.pos		= 15,-73		;Approximate position of head
+mid.pos		= -1,-47		;Approximate position of midsection
+shadowoffset	= 0		;Number of pixels to vertically offset the shadow
+draw.offset	= 0,0		;Player drawing offset in pixels (x, y)
+
+;--	--	--	--	--	--	--
+
+[Velocity]
+walk.fwd		= 2.6		;Walk forward
+walk.back		= -2.4		;Walk backward
+run.fwd		= 7.5, 0		;Run forward (x, y)
+run.back		= -6,-5		;Hop backward (x, y)
+jump.neu		= 0,-11.5		;Neutral jumping velocity (x, y)
+jump.back		= -3.75		;Jump back Speed (x, y)
+jump.fwd		= 3.75		;Jump forward Speed (x, y)
+runjump.back	= -7.5,-8.5	;Running jump speeds (opt)
+runjump.fwd	= 7,-9		;.
+airjump.neu	= 0,-8.1		;.
+airjump.back	= -2.55		;Air jump speeds (opt)
+airjump.fwd	= 2.5		;.
+
+;--	--	--	--	--	--	--
+
+[Movement]
+airjump.num	= 0		;Number of air jumps allowed (opt)
+airjump.height	= 35		;Minimum distance from ground before you can air jump (opt)
+yaccel		= .5859375	;Vertical acceleration
+stand.friction	= .85		;Friction coefficient when standing
+crouch.friction	= .82		;Friction coefficient when crouching
+
+;--	--	--	--	--	--	--
+
+[Quotes]
+victory78		= "You messed with the wrong ox demon prince pal!"
+victory79		= "Oh dang, I'm late for school!"
+victory80		= "Half man, half Saiyan, all Justice!"
+victory81		= "Up, up and away!"
+victory82		= "That was a Piccolo style beatdown!"
+victory83		= "Can't you feel the world beneath you? It lives."
+victory84		= "There will still be a world tomorrow. I will make sure of it."
+victory85		= "The world needs heroes."
+victory86		= "Justice, truth, and posing!"
+victory87		= "My blood yearns for the fight, but I... I yearn for Justice."
+victory88		= "Even if you won, someone even stronger would surface and take my place! Not one death will go unaccounted for, not one!"
+victory89		= "Now you know why my lil brother looks up to me."
+victory90		= "You had guts, now you have bruises."
+victory91		= "You know you can't win! You can't destroy what I really am! I AM JUSTICE."
+
+
+
+;---------------------- Integer variable list ----------------------
+
+; var(0):= 52100, 2464, 2603, 2604
+; var(1):= 52100, 2402, 2602, 18120, 3231
+; var(2):= 2011, 2021, 2031, 2041, 2402, 2602, 3025, 3231, 5900
+; var(3):= 19900, 2011, 2021, 2031, 2041, 1000, 1001, 1003, 1004, 1006, 1007, 1050
+; var(4):= 1305, 2483, 50
+; var(5):= 1100, 1200, 1500
+; var(6):= -2, 620, 1430, 1440, 2781
+; var(7):= -2, 620, 1430, 1440
+; var(8):= -2
+; var(9):= 801
+;var(10):= 110, 115, 117, 118, 19891, -2
+;var(11):= 1315
+;var(12):= -2, 1550
+;var(13):= 5900
+;var(14):= 1010, 1011, 1012, 1000, 1001, 1003, 1004, 1006, 1007, 1050
+;var(15):= -1
+;var(16):= 182
+;var(17):= 750, 760
+;var(18):= 1010, 1011, 1012, 1013, 1060, 1061, 2011, 2021, 2031, 2041, 2402, 2602, 2400, 2600
+;var(19):= -2, 2000, 2030, 2300, 2330
+;var(20):= -3, 1301
+;var(21):= 186
+;var(22):= 10230, 10231, 10232, 10233, -2
+;var(23):= -3
+;var(24):= 2720, 2751   ---   Taking into account if Piccolo summoned clones
+;var(25):= 2402, 2602, 2401, 2601
+;var(26):= 2000, 2030, 2400, 2480, 2600
+;var(27):= -2
+;var(28):= 2011, 2021, 2031, 2041, -2, 2000, 2030
+;var(29):= 2300, 2330, 2100, 2200, 2400, 2500, 2600, 2800
+;var(30):= 950, 2481
+;var(31):= 2481
+;var(33):= -2, 2900
+;var(34):= 181, 5900
+;var(35):= -2
+;var(36):= 3225
+;var(37):= 3241
+;var(38):= -2
+;var(39):= 2402, 2602, -2, 2115, 2215, 2500
+;var(40):= 182, 183, 730
+;var(44):= 5900
+;var(45):= 5900
+;var(46):= 5900
+;var(47):= 5100, 5110, 5900
+;var(48):= 5900
+;var(54):= 5900
+;var(55):= 5900
+;var(56):= -2
+;var(57):= -2
+
+;---------------------- Float variable list ----------------------
+
+; fvar(0):= 52100, 3126
+; fvar(1):= 52100, 2604, 3227, 3228, -3
+; fvar(9):= -2, 1300, 1301, 1302
+;fvar(12):= -2, 2720
+;fvar(15):= -2
+;fvar(20):= 2481, 2485
+;fvar(27):= 1050, 1150, 1250, 1550, 2000, 2030, 2300, 2330, 2100, 2115, 2200, 2215, 2400, 2500, 2600, 2800, 2900
+;fvar(28):= 1100, 1200, 1400, 1410, 1420, 1430, 1440, 1500, 1050, 1150, 1250, 1550, 2300, 2330, 2100, 2200, 2400, 2500, 2600, 2800, 2810, 3115
+
