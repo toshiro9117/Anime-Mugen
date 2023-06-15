@@ -69,11 +69,11 @@
  ;extra parameters.
  ;
  ;Insert your characters below.
-
-kfm, stages/kfm.def
-kfm720, stages/kfm.def
 C18Z2
 android16
+Android 17
+Android 19
+
 
 ;-----------------------
 [ExtraStages]

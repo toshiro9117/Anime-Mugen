@@ -1,0 +1,17 @@
+[Info]
+name="Androide 17 by Joe"
+DisplayName="Android 17"
+
+[Files]
+cmd=and-18.cmd
+cns=and-18.cns
+st=and-18.cns
+stcommon=common1.cns
+sprite=and-18.sff
+anim=and-18.air
+sound=and-18.snd
+pal1=and-18.act
+pal2=and2-18.act
+pal3=and3-18.act
+pal4=and4-18.act
+
