@@ -1,0 +1,915 @@
+;Hit Points!
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3550
+ID = 3421
+pos = 85,20
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+;Hit displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(25)>=0 
+anim = 3560+Ceil(root,var(25)%10)
+ID = 3421
+pos = 100,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Hit displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(25)>=10  
+anim=3560+((root,var(25)/10)%10)
+ID = 3421
+pos = 90,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Hit displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(25)>=100  
+anim=3560+((root,var(25)/100)%10)
+ID = 3421
+pos = 80,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Rad Points!
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3551
+ID = 3421
+pos = 135,20
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+;Rad displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(28)>=0 
+anim = 3560+Ceil(root,var(28)%10)
+ID = 3421
+pos = 180,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Rad displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(28)>=10  
+anim=3560+((root,var(28)/10)%10)
+ID = 3421
+pos = 170,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Rad displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(28)>=100  
+anim=3560+((root,var(28)/100)%10)
+ID = 3421
+pos = 160,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Style Points!
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3552
+ID = 3421
+pos = 215,20
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+;Negative Style sign
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)<0 && root,var(29)>=-9
+anim = 3572
+ID = 3421
+pos = 285,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+;Negative Style sign
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)<-9&&root,var(29)>=-99
+anim = 3572
+ID = 3421
+pos = 275,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+;Negative Style sign
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)<-99
+anim = 3572
+ID = 3421
+pos = 265,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Style displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)
+anim = 3560+Abs(root,var(29)%10)
+ID = 3421
+pos = 290,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Style displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)=0
+anim = 3560
+ID = 3421
+pos = 290,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Style displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)>=10  || root,var(29)<=-10
+anim=3560+Abs((root,var(29)/10)%10)
+ID = 3421
+pos = 280,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Style displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(29)>=100  || root,var(29)<=-100
+anim=3560+Abs((root,var(29)/100)%10)
+ID = 3421
+pos = 270,40
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Items Used
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3553
+ID = 3421
+pos = 85,80
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = !Time
+v = 1
+range = 0,6
+
+;Item displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3560+Var(1)
+ID = 3421
+pos = 130,100
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Deaths/Forms
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3554+Random%2
+ID = 3421
+pos = 175,80
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = !Time
+v = 2
+range = 0,3
+
+;Death/Forms display 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3560+Var(2)
+ID = 3421
+pos = 200,100
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;The Rest
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3556+Random%3
+ID = 3421
+pos = 245,80
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = !Time
+v = 3
+range = 0,9
+
+;The Rest display 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3560+Var(2)
+ID = 3421
+pos = 270,100
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Yamcha
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3570
+ID = 3421
+pos = 15,130
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+[State 0, VarRandom]
+type = VarRandom
+trigger1 = !Time
+v = 4
+range = 9,99
+
+;Yamcha
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3560+Var(2)
+ID = 3421
+pos = 60,150
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;Yamcha 10s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(4)>=10  
+anim=3560+(var(4)/10)%10
+ID = 3421
+pos = 50,150
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .5,.5
+
+;RANK SSS
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=70
+anim = 3574
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK SS
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=60&&var(26)<70
+anim = 3575
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK S
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=50&&var(26)<60
+anim = 3576
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK A
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=40&&var(26)<50
+anim = 3577
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK B
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=30&&var(26)<40
+anim = 3578
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK C
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=20&&var(26)<30
+anim = 3579
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK D
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)>=10&&var(26)<20
+anim = 3580
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+;RANK F
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=var(26)<10
+anim = 3581
+ID = 3421
+pos = 280,195
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = 1,1
+
+[State 0, ParentVarAdd]
+type = ParentVarAdd
+trigger1 = !Time
+var(26) = 6000+random%300000
+
+;FINAL SCORE
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+anim = 3571
+ID = 3421
+pos = 180,145
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .50,.50
+
+;FINAL displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=0 || root,var(26)<0
+anim = 3560+root,var(26)%10
+ID = 3421
+pos = 260,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;FINAL displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=10  
+anim=3560+(root,var(26)/10)%10
+ID = 3421
+pos = 250,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;FINAL displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=100  
+anim=3560+(root,var(26)/100)%10
+ID = 3421
+pos = 240,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;COMMA
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=1000  
+anim=3573
+ID = 3421
+pos = 236,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;FINAL displays 1000s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=1000  
+anim=3560+(root,var(26)/1000)%10
+ID = 3421
+pos = 225,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;FINAL displays 10000s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=10000  
+anim=3560+(root,var(26)/10000)%10
+ID = 3421
+pos = 215,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+;FINAL displays 100000s
+[State 0, Explod]
+type = Explod
+trigger1 = !Time
+trigger1=root,var(26)>=100000  
+anim=3560+(root,var(26)/100000)%10
+ID = 3421
+pos = 205,165
+postype = left  ;p2,front,back,left,right
+facing = 1-(teamside=2)*2
+removetime = 90
+ontop = 1
+bindtime = -1
+scale = .75,.75
+
+
+-2
+
+;================Volley Ball Code Extravaganza===============
+;Ball Hit Points
+[State 0, VarAdd]
+type = VarAdd
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+var(25) = 1
+;Ball Hit Points Reset
+[State 0, VarSet]
+type = VarSet
+trigger1 = !NumHelper(3410)
+var(25) = 0
+
+;Hit displays 
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+anim = 3424
+ID = 3421
+pos = -10,-70
+postype = p2
+sprpriority = 10
+facing=Cond(enemy,Facing =-1,-1,1)
+
+;Rad Hit Points Reset
+[State 0, VarSet]
+type = VarSet
+trigger1 = !NumHelper(3410)
+var(28) = 0
+
+;Rad Hit displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(28)>=1  
+anim = 3440+var(28)%10
+ID = 3421
+pos = -10,60
+postype = p2
+sprpriority = 10
+facing=Cond(enemy,Facing =-1,-1,1)
+
+;Rad Hit displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(28)>=10  
+anim=3440+((var(28)/10)%10)
+ID = 3421
+pos = 0,60
+postype = p2
+sprpriority = 10
+facing=Cond(enemy,Facing =-1,-1,1)
+
+;Rad Hit displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(28)>=100 
+anim=3440+((var(28)/100)%10)
+ID = 3421
+pos = 0,60
+postype = p2
+sprpriority = 10
+facing=Cond(enemy,Facing =-1,-1,1)
+
+;Style Hit Points Reset
+[State 0, VarSet]
+type = VarSet
+trigger1 = !NumHelper(3410)
+var(29) = 0
+
+;Style Hit displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(29)>=1  
+anim = 3450+var(29)%10
+ID = 3421
+pos = -10,-70
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =1,1,-1)
+
+;Style Hit displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(29)>=10  
+anim=3450+((var(29)/10)%10)
+ID = 3421
+pos = 0,-70
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =1,1,-1)
+
+;Style Hit displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(29)>=100 
+anim=3450+((var(29)/100)%10)
+ID = 3421
+pos = 0,-70
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =1,1,-1)
+
+;TOTAL Points
+[State 0, VarSet]
+type = VarSet
+trigger1 = NumHelper(3410)
+var(26) = Var(28) + Var(25) + Var(29)
+;TOTAL Points Reset
+[State 0, VarSet]
+type = VarSet
+trigger1 = !NumHelper(3410)
+var(26) = 0
+
+;TOTAL Points  displays 1s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(26)>=1  
+anim = 3440+var(26)%10
+ID = 3421
+pos = -10,0
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =-1,-1,1)
+
+;TOTAL Points  displays 10s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(26)>=10  
+anim=3440+((var(26)/10)%10)
+ID = 3421
+pos = 0,0
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =-1,-1,1)
+
+;TOTAL Points  displays 100s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(26)>=100 
+anim=3440+((var(26)/100)%10)
+ID = 3421
+pos = 0,0
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =-1,-1,1)
+
+;TOTAL Points  displays 1000s
+[State 0, Explod]
+type = Explod
+trigger1 = NumHelper(3410)
+trigger1 = helper(3410),StateNo = 3420
+trigger1 = MoveHit = 1
+trigger1=var(26)>=1000
+anim=3440+((var(26)/1000)%10)
+ID = 3421
+pos = 0,0
+postype = p1
+sprpriority = 10
+facing=Cond(Facing =-1,-1,1)
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99200
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99212
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99221
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99225
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99230
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99240
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99241
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99251
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99270
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99400
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99410
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99420
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99430
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99440
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99450
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99600
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99610
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99620
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99630
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99640
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99650
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99900
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !NumHelper(3410)
+id = 99910
